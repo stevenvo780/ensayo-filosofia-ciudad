@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Sobre el límite de la inteligencia artificial — Conocimiento urbano (con Yuk Hui)</title>
+  <meta name="author" content="Steven Vallejo">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%230f1518'/><g fill='%236fb3c9'><rect x='10' y='30' width='10' height='24'/><rect x='24' y='18' width='12' height='36'/><rect x='40' y='34' width='12' height='20'/></g></svg>">
+
+  <!-- reveal.js 5.x por CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/night.css" id="theme">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+
+  <style>
+    :root { --accent:#6fb3c9; --paper:#eef4f6; }
+    .reveal {
+      --r-heading-font:'EB Garamond', Georgia, 'Times New Roman', serif;
+      --r-main-font:'EB Garamond', Georgia, 'Times New Roman', serif;
+      --r-main-font-size:34px;
+    }
+    .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+      font-family:var(--r-heading-font);
+      text-transform:none; font-weight:600; letter-spacing:.005em; line-height:1.12;
+      color:var(--paper);
+    }
+    .reveal h1 { font-size:1.9em; }
+    .reveal h2 { font-size:1.42em; margin-bottom:.5em; }
+    .reveal .kicker {
+      color:var(--accent); font-size:.5em; letter-spacing:.22em; text-transform:uppercase;
+      font-weight:500; margin:0 0 .35em 0; display:block;
+    }
+    .reveal p, .reveal li { line-height:1.42; }
+    .reveal strong { color:var(--accent); font-weight:600; }
+    .reveal em { color:#d6e7ee; font-style:italic; }
+    .reveal .lead { font-size:1.16em; line-height:1.32; }
+    .reveal .muted { color:#aab4ba; }
+    .reveal .gk { font-style:italic; color:#d6e7ee; }
+    .reveal section { text-align:left; }
+    .reveal .center { text-align:center; }
+    .reveal ul { width:100%; }
+    .reveal ol { width:100%; }
+    .reveal blockquote {
+      border-left:3px solid var(--accent); background:rgba(255,255,255,.025);
+      font-style:italic; width:92%; box-shadow:none; padding:.5em 1em; font-size:.92em;
+    }
+    .reveal .cols { display:grid; grid-template-columns:1fr 1fr; gap:1em; align-items:start; }
+    .reveal .card {
+      border:1px solid rgba(111,179,201,.32); border-radius:.45em;
+      padding:.55em .8em; background:rgba(255,255,255,.02);
+    }
+    .reveal .card h4 { color:var(--accent); font-size:.85em; margin:0 0 .25em 0; letter-spacing:.04em; }
+    .reveal .card p, .reveal .card li { font-size:.82em; line-height:1.3; }
+    .reveal .ref { font-size:.46em; color:#88939a; margin-top:.8em; line-height:1.4; }
+    .reveal .footer {
+      position:fixed; bottom:10px; left:18px; font-size:12px; color:#5f6a70;
+      font-family:var(--r-heading-font); letter-spacing:.04em; z-index:30;
+    }
+    .reveal .title-rule { width:64px; height:2px; background:var(--accent); border:0; margin:1em auto; }
+    .reveal .ne { color:var(--accent); font-weight:600; }
+  </style>
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+
+    <!-- 1 · PORTADA -->
+    <section class="center" data-background-color="#0f1518">
+      <p class="kicker">Filosofía de la Ciudad</p>
+      <h1>Sobre el límite de la<br>inteligencia artificial</h1>
+      <hr class="title-rule">
+      <h2 style="font-weight:500;color:#d6e7ee;">en la producción de conocimiento urbano</h2>
+      <p class="muted" style="margin-top:1.1em; font-size:.8em;">a partir de <em>Yuk Hui</em> — tecnodiversidad y cosmotécnica</p>
+      <p class="muted" style="margin-top:1.0em;">
+        <strong style="color:var(--paper);">Steven Vallejo</strong><br>
+        Filosofía de la Ciudad · 12 de junio de 2026
+      </p>
+      <aside class="notes">
+        Buenas tardes. Ayer hablé de Platón; hoy doy un salto de veinticuatro siglos para hablar del límite de la inteligencia artificial —pero el problema de fondo es el mismo: ¿qué tipo de cosa es el conocimiento, y qué clase de agente puede producirlo?
+        Tomo como horizonte la pregunta que formula Yuk Hui en «Sobre el límite de la inteligencia artificial»: ese límite no es de cantidad de cómputo, sino que remite a la *cosmotécnica*, al hecho de que toda técnica está inscrita en un orden cosmológico y moral. Y lo aplico a un caso concreto: la producción de conocimiento *urbano*, que es el terreno de mi propia tesis sobre el corredor Junín–San Antonio.
+        Una advertencia de tono: no hablo desde el miedo ni desde la abstención. Hablo como quien construye sistemas con IA todos los días. Es una crítica desde el oficio, no contra el oficio. Vamos a la tesis.
+      </aside>
+    </section>
+
+    <!-- 2 · TESIS -->
+    <section>
+      <p class="kicker">La tesis en una frase</p>
+      <h2>Procesar no es producir</h2>
+      <blockquote>
+        La IA no <strong>produce</strong> conocimiento urbano: a lo sumo lo <strong>procesa</strong>. La ciudad es un sistema <em>autopoiético</em> y <em>auto-organizado</em> cuyo saber es inmanente, situado y encarnado, irreductible a la optimización algorítmica externa.
+      </blockquote>
+      <ul>
+        <li class="fragment">La IA es un instrumento con superpoderes —<strong>acelera, escala, formaliza</strong>— pero epistémicamente <strong>subordinado</strong>.</li>
+        <li class="fragment"><em>No tiene mundo, no habita, no fija fines.</em></li>
+      </ul>
+      <p class="ref">Soporte conceptual: proyecto de Fenomenología Urbana (corredor Junín–San Antonio).</p>
+      <div class="footer">Límites de la IA · Conocimiento urbano</div>
+      <aside class="notes">
+        La tesis cabe en una frase: la IA no *produce* conocimiento urbano; a lo sumo lo *procesa*. La distinción entre procesar y producir es el eje de toda la charla y la voy a ir desplegando.
+        ¿Por qué? Porque la ciudad es un sistema autopoiético y auto-organizado —ya explicaré esos términos— cuyo saber es inmanente, situado y encarnado. No es un objeto que se deje optimizar desde fuera por un algoritmo.
+        Eso no rebaja a la IA: es un instrumento con superpoderes. Acelera, escala, formaliza, procesa volúmenes que ningún humano podría. Pero es epistémicamente subordinado, y la razón es categorial: no tiene mundo, no habita, no fija fines. Opera sobre datos, no sobre el mundo. Toda la charla es el desarrollo riguroso de esa última frase.
+      </aside>
+    </section>
+
+    <!-- 3 · ETHOS DEL EXPERTO -->
+    <section>
+      <p class="kicker">Posición del experto · ethos</p>
+      <h2>Ni tecnófobo ni tecno-optimista</h2>
+      <div class="cols">
+        <div class="card fragment">
+          <h4>Al tecnófobo</h4>
+          <p>No: la IA no es magia peligrosa. Es una herramienta poderosa y <strong>la uso a diario</strong>.</p>
+        </div>
+        <div class="card fragment">
+          <h4>Al tecno-optimista</h4>
+          <p>No: la IA no «puede con todo». Su límite no es de <em>cantidad</em> (más datos, más cómputo) sino <strong>categorial</strong>.</p>
+        </div>
+      </div>
+      <blockquote class="fragment" style="margin-top:.8em;">
+        «Soy informático. Uso modelos para construir, formalizar, simular. Por eso esta charla no es un rechazo: es un <strong>mapa</strong> de dónde la herramienta deja de ser conocimiento y se vuelve solo procesamiento.»
+      </blockquote>
+      <div class="footer">Límites de la IA · Conocimiento urbano</div>
+      <aside class="notes">
+        Antes de argumentar, fijo mi posición, porque desactiva de un golpe a los dos interlocutores fáciles.
+        Al tecnófobo le digo: no, la IA no es magia peligrosa ni un oráculo oscuro. Es una herramienta poderosa, y yo la uso todos los días para construir, formalizar y simular. No vengo a pedir que la apaguen.
+        Al tecno-optimista le digo lo contrario: no, la IA no «puede con todo». Y aquí está la clave de toda la conferencia: su límite no es *cuantitativo* —no se resuelve con más datos ni más cómputo— sino *categorial*. Pertenece a otro orden distinto del de la experiencia. Más adelante mostraré por qué.
+        La frase que resume mi ethos: soy informático, uso modelos para construir; por eso esta charla no es un rechazo, es un mapa de dónde la herramienta deja de ser conocimiento y se vuelve solo procesamiento. Hablo desde dentro del oficio.
+      </aside>
+    </section>
+
+    <!-- 4 · DEFLACIÓN ONTOLÓGICA -->
+    <section>
+      <p class="kicker">Deflación ontológica</p>
+      <h2>Qué <em>es</em> la IA</h2>
+      <p class="lead">No es un sujeto epistémico. Es un <strong>agente con superpoderes</strong>: un amplificador de capacidades humanas.</p>
+      <ul>
+        <li class="fragment">Interpola patrones, optimiza una función objetivo <strong>dada</strong>, genera representaciones <em>sobre</em> representaciones.</li>
+        <li class="fragment">No habita, no tiene <span class="gk">Lebenswelt</span>, no fija fines: opera sobre <strong>datos</strong>, no sobre el mundo.</li>
+        <li class="fragment">Distinción que sostiene la charla: <strong>instrumento ≠ agente epistémico</strong>. <span class="muted">El telescopio amplía la vista; no decide qué vale la pena mirar.</span></li>
+      </ul>
+      <p class="fragment" style="margin-top:.3em;"><strong>Anclaje:</strong> Dreyfus, <em>What Computers Still Can't Do</em> — la inteligencia situada depende de un <em>cuerpo</em>, un <em>trasfondo de prácticas</em> y un <em>mundo</em> que no se deja formalizar en reglas.</p>
+      <p class="ref">Dreyfus (1992) · crítica fenomenológica (merleau-pontiana / heideggeriana) a la IA.</p>
+      <div class="footer">Límites de la IA · Conocimiento urbano</div>
+      <aside class="notes">
+        Hago ahora una deflación ontológica: bajarle los humos metafísicos al concepto de IA para ver qué es realmente.
+        La IA no es un sujeto epistémico. Es un agente con superpoderes, un amplificador de capacidades humanas. ¿Qué hace, técnicamente? Interpola patrones en datos, optimiza una función objetivo que *alguien le dio*, y genera representaciones sobre representaciones. Nunca sale de la capa de los datos.
+        Por eso no habita: no tiene Lebenswelt, mundo de la vida; no fija fines, los recibe. Opera sobre datos, no sobre el mundo. La distinción que sostiene toda la charla es: instrumento no es lo mismo que agente epistémico. Un telescopio amplía enormemente la vista, pero no decide qué vale la pena mirar ni qué significa lo que se ve. La IA es un telescopio cognitivo.
+        El anclaje filosófico fuerte es Hubert Dreyfus, «What Computers Still Can't Do». Su crítica, de raíz fenomenológica —Merleau-Ponty, Heidegger—, es que la inteligencia situada depende de un cuerpo, de un trasfondo de prácticas no explicitadas y de un mundo que no se deja reducir a reglas formales. Eso conecta directamente con la fenomenología que uso en mi tesis.
+      </aside>
+    </section>
+
+    <!-- 5 · QUÉ ES LA CIUDAD -->
+    <section>
+      <p class="kicker">Qué es la ciudad</p>
+      <h2>Autopoiesis y auto-organización</h2>
+      <ul>
+        <li class="fragment"><strong>Maturana &amp; Varela</strong> — <em>autopoiesis</em>: un sistema que se produce a sí mismo; su organización es su propio producto. No un objeto a optimizar desde fuera.</li>
+        <li class="fragment"><strong>Aguilar (2014)</strong>, <em>Sistemas Emergentes y Control Inteligente</em> — control <em>no</em> centralizado, emergencia, estigmergia.</li>
+        <li class="fragment"><strong>Johnson (2001)</strong> — orden <em>bottom-up</em>: hormigas, neuronas, ciudades, software.</li>
+      </ul>
+      <blockquote class="fragment" style="margin-top:.6em;">
+        El conocimiento sobre la ciudad <strong>ya está distribuido e inmanente</strong> en sus prácticas, trayectorias, hábitos y cuerpos. No hay un «afuera» privilegiado.
+      </blockquote>
+      <p class="ref">Maturana &amp; Varela (1984); Aguilar (2014); Johnson (2001) — ya citados en el cap. 4 de la tesis.</p>
+      <div class="footer">Límites de la IA · Conocimiento urbano</div>
+      <aside class="notes">
+        Si la primera pregunta era qué es la IA, esta es qué es la ciudad —porque el límite de la IA depende de la naturaleza de su objeto.
+        Primero, Maturana y Varela y el concepto de autopoiesis: un sistema autopoiético es uno que se produce a sí mismo, cuya organización es a la vez su producto. La célula, el organismo… y la ciudad. Una ciudad no es un objeto inerte que un planificador optimiza desde fuera; es un organismo que genera y mantiene su propio orden.
+        Segundo, Aguilar 2014, que ya está en mi bibliografía y citado en el capítulo 4: los sistemas emergentes y el control no centralizado. La estigmergia, la emergencia: el orden surge de interacciones locales, sin un cerebro central.
+        Tercero, Steven Johnson, «Emergence», 2001: el orden bottom-up que comparten las colonias de hormigas, las redes neuronales, las ciudades y el software.
+        La consecuencia es fuerte: el conocimiento sobre la ciudad ya está distribuido e inmanente en sus prácticas, sus trayectorias, sus hábitos, sus cuerpos. No existe un «afuera» privilegiado desde donde un planificador —humano o algorítmico— tenga mejor acceso al sistema que el sistema a sí mismo. Esto es lo que va a chocar de frente con la pretensión de la IA.
+      </aside>
+    </section>
+
+    <!-- 6 · CHOQUE EPISTEMOLÓGICO -->
+    <section>
+      <p class="kicker">El corazón de la charla</p>
+      <h2>El choque epistemológico</h2>
+      <p class="lead">Producir conocimiento urbano <strong>no es optimizar</strong>.</p>
+      <ul>
+        <li class="fragment">Es una epistemología <strong>situada</strong> (Haraway, <em>Situated Knowledges</em>) y <strong>encarnada</strong> (Husserl, <span class="gk">Lebenswelt</span>; Merleau-Ponty, cuerpo vivido). Requiere <em>estar-en-el-mundo</em>.</li>
+        <li class="fragment">La IA opera sobre el <strong>dato</strong> — una representación <em>recortada</em> del mundo.</li>
+        <li class="fragment">Entre el dato y la experiencia hay una <strong>brecha irreductible</strong>. No es un defecto a cerrar con más cómputo: es <em>constitutiva</em>.</li>
+      </ul>
+      <p class="ref">Haraway, <em>Situated Knowledges</em>; Husserl, <em>Lebenswelt</em>; Merleau-Ponty, cuerpo vivido.</p>
+      <div class="footer">Límites de la IA · Conocimiento urbano</div>
+      <aside class="notes">
+        Llegamos al corazón de la charla, el choque epistemológico entre lo que hace la IA y lo que es producir conocimiento urbano.
+        Producir conocimiento urbano *no es optimizar*. Es una epistemología situada —en el sentido de Donna Haraway, «Situated Knowledges»: todo conocimiento se da desde una posición, no hay un «ojo de Dios» desde ningún lugar— y es una epistemología encarnada —Husserl, con el mundo de la vida, el Lebenswelt; Merleau-Ponty, con el cuerpo vivido. Conocer la ciudad requiere estar-en-el-mundo, caminarla, habitarla.
+        La IA, en cambio, opera sobre el dato. Y el dato es una representación recortada del mundo: ya pasó por una selección de qué se mide y qué no. Entre ese dato y la experiencia vivida hay una brecha. El punto fino, y el que me importa filosóficamente, es este: esa brecha *no es un defecto* que se cierre con más cómputo o más sensores. Es *constitutiva*. Pertenece a la diferencia de orden entre una representación y una vivencia. Por más datos que acumules, nunca cruzas del mapa al territorio vivido.
+      </aside>
+    </section>
+
+    <!-- 7 · FALACIA DE LA AGENCIA ALGORÍTMICA -->
+    <section>
+      <p class="kicker">La falacia de la agencia algorítmica</p>
+      <h2>«Las recomendaciones de la IA son mejores»</h2>
+      <p class="muted">…presupone tres cosas <em>falsas</em> en un sistema autopoiético:</p>
+      <ol>
+        <li class="fragment">que la ciudad es <strong>optimizable</strong> hacia un óptimo <em>único</em> y bien definido;</li>
+        <li class="fragment">que el problema está <strong>bien especificado</strong> — <em>¿quién fija la función objetivo?</em>;</li>
+        <li class="fragment">que el <strong>dato captura</strong> lo relevante de la experiencia urbana.</li>
+      </ol>
+      <p class="fragment" style="margin-top:.4em;">Es la reedición <em>hi-tech</em> del <strong>alto modernismo urbano</strong> (Le Corbusier; la ciudad legible desde arriba). Scott, <em>Seeing Like a State</em>: la legibilidad totalizante destruye la <span class="gk">metis</span> —el saber práctico local.</p>
+      <p class="ref">Scott (1998); cf. Suchman (1987), <em>Plans and Situated Actions</em>.</p>
+      <div class="footer">Límites de la IA · Conocimiento urbano</div>
+      <aside class="notes">
+        Aquí desmonto la falacia más común: creer que «las recomendaciones de la IA son mejores» y que, por tanto, deberíamos dejarle decidir la ciudad. Esa creencia presupone tres cosas, y las tres son falsas en un sistema autopoiético.
+        Una: que la ciudad es optimizable hacia un óptimo único y bien definido. Pero una ciudad tiene fines plurales y en conflicto —no hay *un* óptimo, hay arbitrajes políticos.
+        Dos: que el problema está correctamente especificado. ¿Quién fija la función objetivo? Optimizar el tráfico puede destruir el comercio de barrio; optimizar la seguridad puede expulsar a quien la habita. La elección de la función objetivo *ya* es la decisión política, y la IA la recibe hecha, no la justifica.
+        Tres: que el dato captura lo relevante de la experiencia urbana. Y no: lo que se mide es una fracción de lo que importa.
+        Esto no es nuevo. Es la reedición en alta tecnología del alto modernismo urbano: Le Corbusier, la ciudad legible y geométrica vista desde arriba. James Scott, en «Seeing Like a State», mostró cómo la legibilidad totalizante del Estado destruye la *metis* —el conocimiento práctico, local, encarnado— y produce desastres precisamente por ignorar el saber inmanente del sistema. La IA es la nueva forma de esa hybris: más sofisticada, igual de ciega al mundo vivido. Y Lucy Suchman, con «Plans and Situated Actions», ya mostró que la acción situada siempre desborda al plan.
+      </aside>
+    </section>
+
+    <!-- 8 · PRUEBA PERFORMATIVA -->
+    <section>
+      <p class="kicker">Prueba performativa</p>
+      <h2>El límite, demostrado desde el oficio</h2>
+      <blockquote class="fragment">
+        «En esta tesis usé HPC, simulación de agentes y codificación con LLMs locales (Ollama, <em>qwen3:14b</em>). Y aun así, el resultado central es que la <strong>matriz de colapso fenomenológico no puede afirmarse sin el campo</strong>. La máquina me llevó a las preguntas correctas; las respuestas las da el cuerpo que camina San Antonio a las 8 de la noche.»
+      </blockquote>
+      <ul>
+        <li class="fragment">«El computador reemplaza el campo» está en la lista de <strong>lo que NO se debe decir</strong>.</li>
+        <li class="fragment">La <em>brecha empírica</em> no es debilidad de la tesis: es la <strong>prueba viva</strong> de la tesis del viernes.</li>
+      </ul>
+      <p class="ref">tesis §4.5–4.6 (la brecha empírica como criterio de rigor).</p>
+      <div class="footer">Límites de la IA · Conocimiento urbano</div>
+      <aside class="notes">
+        Este es el golpe más fuerte de la charla, y es el que me autoriza a hablar: demuestro el límite *desde el uso experto*, no desde la abstención.
+        En mi tesis usé de todo: cómputo de alto rendimiento, simulación basada en agentes, codificación asistida con modelos de lenguaje locales —Ollama, qwen3 de 14 mil millones de parámetros, corriendo en mi propia máquina. Usé la herramienta a fondo. ¿Y cuál fue el resultado central? Que la matriz de colapso fenomenológico —el constructo clave de mi investigación— *no puede afirmarse sin el campo*. La máquina me llevó a las preguntas correctas, formuló hipótesis, ordenó el volumen. Pero las respuestas las da el cuerpo que camina San Antonio a las ocho de la noche.
+        De hecho, en mis propias reglas de guión, la frase «el computador reemplaza el campo» figura explícitamente en la lista de lo que *no* se debe decir. La IA es heurística que orienta, no oráculo que decide.
+        Y el giro elegante: la «brecha empírica» de mi tesis —el hecho de que la ingesta de campo sigue en proceso— no es una debilidad metodológica. Es la prueba viva de la tesis de hoy: ni con todo el cómputo del mundo se sustituye el estar-ahí.
+      </aside>
+    </section>
+
+    <!-- 9 · TESIS POSITIVA -->
+    <section>
+      <p class="kicker">Tesis positiva · no es tecnofobia</p>
+      <h2>Co-producción asimétrica</h2>
+      <p class="lead">El lugar correcto de la IA: <strong>amplificar</strong> la capacidad humana de formular, formalizar, explorar escenarios, procesar volumen — <em>subordinada</em> a una epistemología situada.</p>
+      <ul>
+        <li class="fragment">«Persona con superpoderes que te ayuda a construir»: <strong>sí</strong>.</li>
+        <li class="fragment">Pero la <strong>dirección</strong>, los <strong>fines</strong> y la <strong>validación</strong> siguen siendo del <em>sujeto encarnado</em> y del <em>sistema urbano</em> que se auto-organiza.</li>
+        <li class="fragment">Es <strong>co-producción asimétrica</strong>, no sustitución.</li>
+      </ul>
+      <div class="footer">Límites de la IA · Conocimiento urbano</div>
+      <aside class="notes">
+        Insisto en que esto no es tecnofobia, y por eso formulo una tesis *positiva*: cuál es el lugar correcto de la IA.
+        Su lugar es amplificar la capacidad humana de formular problemas, formalizarlos, explorar escenarios, procesar volúmenes —pero subordinada a una epistemología situada. La metáfora que me gusta es «una persona con superpoderes que te ayuda a construir sistemas»: a eso digo que sí, rotundamente.
+        Pero —y es el «pero» decisivo— la dirección, los fines y la validación siguen siendo competencia del sujeto encarnado y del propio sistema urbano que se auto-organiza. La IA propone, explora, acelera; el sujeto situado dirige, decide los fines y valida contra el mundo vivido.
+        El nombre técnico de esta relación es co-producción *asimétrica*. No es sustitución, ni es una colaboración entre iguales: hay una asimetría irreductible porque solo uno de los dos polos tiene mundo.
+      </aside>
+    </section>
+
+    <!-- 10 · CIERRE CRÍTICO: TECNODIVERSIDAD -->
+    <section data-background-color="#0f1518">
+      <p class="kicker">Cierre crítico · con Yuk Hui</p>
+      <h2>Tecnodiversidad y cosmotécnica</h2>
+      <p class="lead">La pregunta no es «¿puede la IA con todo?», sino <strong>«¿qué tipo de conocimiento es el urbano y quién o qué puede producirlo?»</strong></p>
+      <ul>
+        <li class="fragment">Respuesta: un saber <em>autopoiético, situado y encarnado</em>. La IA lo <strong>asiste</strong>; no lo reemplaza. Límite <strong>categorial</strong>, no técnico.</li>
+        <li class="fragment">Con <strong>Yuk Hui</strong>: el límite de la IA remite a la <em>cosmotécnica</em> — toda técnica está inscrita en un orden cosmológico y moral. La IA universaliza <em>una sola</em> técnica.</li>
+        <li class="fragment">Salida: <strong>tecnodiversidad</strong> — una <em>pluralidad</em> de cosmotécnicas y saberes situados frente a la homogeneización algorítmica. La ciudad como locus de técnicas múltiples.</li>
+      </ul>
+      <p class="ref">Yuk Hui, <em>The Question Concerning Technology in China</em> (cosmotécnica) y <em>On the Limit of Artificial Intelligence</em>.</p>
+      <div class="footer">Límites de la IA · Conocimiento urbano</div>
+      <aside class="notes">
+        Cierro elevando la conclusión al marco de Yuk Hui, que es quien da nombre filosófico a lo que vengo argumentando.
+        Primero, reformulo la pregunta. La pregunta interesante no es «¿puede la IA con todo?» —esa es la pregunta del optimista y del tecnófobo por igual. La pregunta es: ¿qué tipo de conocimiento es el urbano, y quién o qué puede producirlo? Y la respuesta de toda la charla: es un saber autopoiético, situado y encarnado; la IA lo asiste pero no lo reemplaza, y su límite no es técnico —no se cierra con más cómputo— sino categorial: pertenece a otro orden que el de la experiencia y la auto-organización.
+        Y aquí entra Hui. Su tesis es que el límite de la IA no es de potencia de cálculo: remite a la *cosmotécnica*. Toda técnica, dice Hui, está inscrita en un orden cosmológico y moral —no hay técnica neutra y universal—. El problema de la IA moderna es que universaliza una *única* cosmotécnica, una sola manera de relacionar saber, mundo y orden, y la presenta como la racionalidad sin más. Eso es exactamente la legibilidad totalizante de Scott, pero pensada a escala planetaria.
+        La salida que propone Hui, y con la que cierro, es la *tecnodiversidad*: reivindicar una pluralidad de cosmotécnicas, de modos situados de saber y de hacer, frente a la homogeneización algorítmica. Y aquí la ciudad reaparece como ejemplo perfecto: no como un sistema a optimizar hacia un óptimo único, sino como el locus mismo de una multiplicidad de técnicas, saberes y formas de vida que se auto-organizan. Defender la ciudad como saber inmanente es, en el fondo, defender la tecnodiversidad. Gracias.
+      </aside>
+    </section>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/math/math.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    slideNumber: 'c/t',
+    transition: 'fade',
+    transitionSpeed: 'default',
+    center: true,
+    width: 1100,
+    height: 740,
+    margin: 0.08,
+    math: {
+      mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+      tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']] },
+      options: { skipHtmlTags: ['script','noscript','style','textarea','pre'] }
+    },
+    plugins: [ RevealNotes, RevealMath.MathJax3 ]
+  });
+</script>
+</body>
+</html>
