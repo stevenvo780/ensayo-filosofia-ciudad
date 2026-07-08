@@ -1,0 +1,9 @@
+.env*
+node_modules
+dist
+.vercel/output
+*.local
+.DS_Store
+# contenido sincronizado (generado desde la fuente por scripts/sync-content.mjs)
+src/content/*.md
+public/figs/*.png

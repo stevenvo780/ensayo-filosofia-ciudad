@@ -1,0 +1,64 @@
+import { useMemo } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { Contrast, Play } from "lucide-react";
+import { Logo } from "./Logo";
+import { useTheme } from "../hooks/useTheme";
+import { useScrollSpy } from "../hooks/useScrollSpy";
+
+interface Section {
+  id: string;
+  label: string;
+}
+
+/**
+ * Barra superior context-aware: marca + secciones (scroll-spy, solo en el ensayo)
+ * + enlaces Ensayo / Tesis / Presentación con la página actual resaltada + tema.
+ */
+export function Nav({ sections = [] }: { sections?: Section[] }) {
+  const { toggle } = useTheme();
+  const ids = useMemo(() => sections.map((s) => s.id), [sections]);
+  const active = useScrollSpy(ids);
+  const cta = ({ isActive }: { isActive: boolean }) => "cta" + (isActive ? " active" : "");
+
+  return (
+    <nav className="nav" aria-label="Navegación principal">
+      <div className="wrap">
+        <Link className="brand" to="/" aria-label="Inicio — La ciudad bien asignada">
+          <Logo size={24} />
+          <span>La ciudad bien asignada</span>
+        </Link>
+
+        {sections.map((s) => (
+          <a
+            key={s.id}
+            className={"hideSm section-link" + (active === s.id ? " active" : "")}
+            href={`#${s.id}`}
+          >
+            {s.label}
+          </a>
+        ))}
+
+        <span className="nav-pages">
+          <NavLink to="/" end className={cta}>
+            Ensayo
+          </NavLink>
+          <NavLink to="/tesis" className={cta}>
+            Tesis
+          </NavLink>
+          <NavLink to="/presentacion" className={cta}>
+            <Play size={13} aria-hidden="true" /> Presentación
+          </NavLink>
+        </span>
+
+        <button
+          className="themeBtn"
+          type="button"
+          onClick={toggle}
+          aria-label="Cambiar tema (claro / oscuro)"
+        >
+          <Contrast size={16} aria-hidden="true" />
+        </button>
+      </div>
+    </nav>
+  );
+}

@@ -1,0 +1,14 @@
+# Publicar SOLO el sitio web/. Excluir todo lo demás (incluye PDFs con copyright).
+.git
+.venv
+node_modules
+fuentes
+material
+ensayo
+notas
+sintesis
+ciencia
+*.pdf
+*.rtf
+*.md
+CONSIGNA.md

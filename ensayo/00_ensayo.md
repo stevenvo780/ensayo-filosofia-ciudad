@@ -1,26 +1,81 @@
-# Filosofía de la Ciudad — Ensayo Final (síntesis del curso)
-**Steven Vallejo Ortiz · 2026-1 · Prof. Carolina · Entrega 10-jul-2026**
+# La ciudad bien asignada
+## Cartografía crítica de una Medellín posible
+**Steven Vallejo Ortiz · Filosofía de la Ciudad · 2026-1 · Prof. Carolina Álvarez-Valencia · Universidad de Antioquia · 10 de julio de 2026**
 
-<!-- Documento principal. Redactar la síntesis integrando material/fenomenologia + material/yuk-hui
-     y los demás ejes del curso (Foucault, Sassen, Berman, Calvino, Heidegger, Augé, Castells...). -->
+> *Ensayo de cartografía crítica (2.000–2.500 palabras). Se acompaña de una tesis de respaldo con
+> el aparato completo —nueve demostraciones computacionales reproducibles y un experimento propio
+> (Vallejo, 2026)—; el argumento de este ensayo es autónomo respecto de ella.*
 
-## 0. Introducción
-_(pendiente)_
+---
 
-## 1. El problema: ¿puede la computación conocer la ciudad?
-_(desde fenomenologia/ + yuk-hui/)_
+Son las seis de la tarde en el pasaje Junín. El ventero de mangos ha movido su carreta dos metros —los mismos dos metros de siempre— para quedar bajo el alero cuando empieza la llovizna; la cámara del poste lo registra como obstrucción del flujo peatonal. En diciembre, este mismo corredor será un río de gente que camina lento bajo los alumbrados, y ningún tablero de control sabrá decir qué se celebra. Desde esta esquina quiero teorizar una ciudad posible. No una utopía: una Medellín que ya existe en fragmentos y que solo falta componer.
 
-## 2. Fenomenología del límite: procesar ≠ producir
-_(síntesis de la exposición de fenomenología)_
+**La tesis.** La ciudad posible es la ciudad *bien asignada*: aquella cuyo orden institucional asigna cada asunto urbano al registro capaz de resolverlo. **Computa** lo computable: algoritmos exactos, públicos y auditables para lo que tiene solución formal —redes, acueductos, rutas—. **Cultiva** lo emergente: fija condiciones sin decretar resultados, porque el tejido urbano se produce solo. Y **delibera** lo relevante: toda función objetivo pública —qué se mide, qué se optimiza, qué cuenta como problema— es un acto político expuesto, plural y revisable. El urbanismo funcionalista fracasó por computar lo emergente; la ciudad inteligente fracasa por computar lo relevante: es el mismo error de asignación con el signo invertido.
 
-## 3. La herramienta sobredimensionada (Hui/Simondon)
-_(síntesis de la ponencia Yuk Hui)_
+Esta idea tiene parientes que conviene nombrar: la métis que James Scott opone a la legibilidad estatal, la policentría de Ostrom, la planificación deliberativa de Healey, la «subsidiariedad epistémica» que Jasanoff acuñó para la gobernanza del riesgo. Se distingue de todos en el fundamento: no asigna por prudencia ante fracasos pasados ni por jurisdicción territorial, sino por un límite categorial demostrable desde el oficio —hay tareas con algoritmo exacto y verdad de referencia; hay dinámicas que solo existen desplegándose; y hay decisiones de relevancia que ningún optimizador puede fijarse a sí mismo—. Ese límite lo he medido sobre datos reales de esta ciudad, como se verá. Y «posible» significa aquí lo que Lefebvre llamó utopía experimental: explorar lo posible implicado en lo real. Esta ciudad no exige tecnología inexistente ni un habitante nuevo; exige recombinar instituciones que Medellín ya tiene.
 
-## 4. Ciudad autopoiética, encarnada y política
-_(cierre)_
+## 1. Ontología: de qué está hecha esta ciudad
 
-## 5. Conclusiones
-_(pendiente)_
+¿De qué está hecha una Medellín posible? De tres materias trenzadas, y ninguna es el silicio.
+
+Primero, de **tejido relacional vivo**. La ciudad se autoproduce: la jerarquía de tamaños del sistema urbano mundial sigue la ley de Zipf sin que ninguna autoridad la haya decretado (lo verifiqué sobre 33.933 ciudades reales: exponente q ≈ 1), y esa evidencia de auto-organización funciona aquí como restricción de realismo, no como programa: la ciudad posible no se funda en un desierto — es Medellín transformada, con su tamaño, su rango y su historia. Su tejido no es un todo conectado ni un montón disperso, sino lo que Gustavo Bueno llamó *symploké*: capas parcialmente conectadas, donde algunas cosas se tocan y otras —por fortuna— no. El hilo más vivo de ese tejido es justamente el que los tableros registran como ruido: la economía informal. El ventero de Junín no es una fricción del flujo; es un productor de ciudad en el sentido preciso de Lefebvre —la ciudad como *obra* colectiva y no como producto—, y siete de cada diez medellinenses asocian el centro con esa informalidad que ninguna función objetivo municipal representa. Una ciudad posible la asume como componente estructural: computa *para* ella, no *contra* ella.
+
+Segundo, de **realidad institucional**. Una métrica urbana es lo que Searle llama una *función de estatus*: «X cuenta como Y en el contexto C» — este nodo *cuenta como* central, este barrio *cuenta como* prioritario, esta ocupación *cuenta como* invasión. Y una función de estatus no es una etiqueta inerte: carga **poderes deónticos** —derechos y deberes que la colectividad reconoce y hace cumplir—, de modo que declarar «oficial» una métrica le da fuerza real sobre la inversión, la vigilancia y la renovación. Esos hechos no están en el asfalto: existen porque una institución los declara, y por eso pueden **declararse de otro modo**, sus poderes deónticos redistribuirse democráticamente. Medellín sabe crear hechos institucionales de escala urbana: EPM, empresa pública que desde 1955 es patrimonio del municipio y financia cerca de uno de cada cinco pesos de su presupuesto, y el presupuesto participativo (Acuerdo 028 de 2017), que ya pone el 5 % de la inversión de libre destinación en manos de la deliberación barrial. La ciudad posible está hecha, también, de reglas constitutivas revisables.
+
+Tercero, de **singularidad situada**. Simmel vio en la economía monetaria la nivelación de toda cualidad en cantidad; el algoritmo hereda esa nivelación y la industrializa: una misma métrica de eficiencia, aplicada en cualquier ciudad del mundo, produce en todas el mismo «centro», el mismo no-lugar —ese espacio sin identidad, relación ni historia que Augé describió en la circulación global—. Contra lo genérico, esta ciudad práctica lo que Yuk Hui llama cosmotecnia: técnica pensada desde el mundo local que la carga. Medellín ya lo hizo una vez: tomó un cable industrial de montaña y lo convirtió en Metrocable, transporte de ladera que ninguna optimización universal habría propuesto (Brand y Dávila, 2011). La singularidad no se conserva en un museo; se produce técnicamente.
+
+## 2. Poder: quién mira, quién mide, quién decide
+
+La consigna obliga a decidir: ¿esta ciudad impone vigilancia física y digital, o habilita espacios libres y autogestionados? Mi respuesta es que la disyuntiva, tomada literalmente, engaña: toda ciudad que gobierna, mide. La decisión real no es *si* se mide sino **quién fija la métrica, quién puede refutarla y qué queda fuera de su alcance**. Esta ciudad cambia el estatuto del mirar.
+
+El fundamento no es una intuición: está medido. Sobre la red peatonal real del centro de Medellín —7.598 nodos y 11.856 aristas descargados de OpenStreetMap— computé tres medidas exactas de centralidad: intermediación, cercanía y vector propio. Las tres son matemáticamente impecables; sus resultados son casi disjuntos. Los conjuntos del cinco por ciento más «central» apenas se solapan (índices de Jaccard 0,10, 0,04 y 0,00 entre pares de métricas), y el nodo más central es *un lugar distinto del centro* bajo cada una (fig. 1). Es la verificación local de un resultado conocido de la ciencia de redes (Crucitti, Latora y Porta, 2006), y su lección política es exacta: **el centro no se descubre; se decide**. Nada *en el grafo* dice cuál métrica usar. Y el punto se agudiza al medir el cuerpo: al ponderar esa misma red por el esfuerzo real de caminar la pendiente —usando la elevación de cada esquina—, el «centro para quien sube» se aparta del «centro del flujo»: unos 230 metros en el centro histórico y hasta 710 a escala de ciudad, donde las laderas se empinan (véase la tesis, D6 y D8). La fatiga —el cuerpo que Merleau-Ponty puso en el centro— reescribe la centralidad que la métrica declaraba neutral, y por eso Medellín inventó el Metrocable. Esto sobrevive, además, a cualquier escepticismo sobre los límites de la IA: aunque comprender fuera computar, ningún optimizador fija su propia función objetivo — decidir qué se optimiza es un acto exterior al cómputo, es decir, político.
+
+![Figura 1 — Tres métricas, tres centros](../ciencia/figs/D5_mega.png)
+*Figura 1 — La misma red real del centro de Medellín bajo tres centralidades exactas: los «centros» apenas se solapan. El centro no se descubre: se decide. Esta ciudad hace pública y disputable esa decisión (demostración D5; Tesis, Apéndice).*
+
+De ahí las instituciones del poder en esta ciudad. **Pluralismo métrico obligatorio**: ninguna cartografía pública —de seguridad, de renovación, de priorización de inversión— puede publicarse bajo una sola métrica; toda foto oficial de la ciudad lleva su disenso interno a la vista. **Derecho a la contra-métrica**: los datos y el cómputo municipales son un bien común auditable, y cualquier junta barrial, veeduría o colectivo puede computar y publicar su propia lectura sobre los mismos datos — la soberanía de cómputo deja de ser consigna y se vuelve infraestructura, custodiada por la misma empresa pública que ya opera el acueducto y la energía. **Deliberación de métricas**: el presupuesto participativo, que ya decide el 5 % de la inversión de libre destinación en cada comuna (Acuerdo 028 de 2017), se extiende de los recursos a las funciones objetivo — la comunidad no solo decide qué se construye; decide qué se mide y qué no se vigila. Y la **asimetría se invierte**: el algoritmo público es transparente y auditable; el ciudadano es opaco por defecto. Habrá cámaras —negarlo sería distopía al revés—, pero su estatuto cambia: métrica pública, contra-métrica posible, y **espacios libres y autogestionados** protegidos por diseño — zonas y horas deliberadamente fuera de registro donde la comunidad se organiza, se expresa y resiste sin tutela algorítmica, porque lo que la modulación no ve, no puede gobernar. Es la respuesta al diagnóstico de Deleuze sobre las sociedades de control, tomada por su final: no lamentar la modulación, «buscar nuevas armas».
+
+Sé que la deliberación es capturable —el propio presupuesto participativo ha sido colonizado a veces por clientelismos y actores armados—. Por eso el diseño no presume virtud: pluralidad obligatoria (la captura debe capturar *varias* métricas a la vez), contra-métrica (la captura es refutable con los mismos datos), sorteo y rotación en los cuerpos que deliberan, y disenso publicado en lugar de consenso fabricado. No es una ciudad sin conflicto: es una ciudad donde el conflicto tiene escenarios en vez de algoritmos que prometen suprimirlo.
+
+## 3. Técnica: superar el funcionalismo sin repetirlo
+
+¿La técnica de esta ciudad sirve al capital o a la emancipación? La pregunta se decide en la propiedad y en los fines, no en la máquina: la misma red de sensores sirve al capital si sus métricas las fija el mercado, y a la emancipación si las fija la deliberación. Por eso el eje del poder precede a este: aquí la infraestructura de cómputo es pública y local —descapitalizar el dato es la condición, no la consecuencia—.
+
+Medellín conoce el fracaso del urbanismo funcionalista de primera mano: el Plan Piloto que Wiener y Sert dibujaron para la ciudad (1948–1952), con su fe en la ciudad-máquina de funciones separadas, fue sencillamente desbordado por la ciudad real, que creció por las laderas sin pedir permiso a la Carta de Atenas. La lectura que propongo: el funcionalismo fracasó por un **monopolio del juicio**: uno reflexiona —el planificador fija la regla— y millones son subsumidos bajo ella. Su error no fue planificar, sino asignar al registro del cálculo lo que pertenece al registro de lo emergente: decretó la vida que debía brotar de la forma. La automatización total repetiría hoy ese error con máquinas mejores. Y no vale responder que el algoritmo, a diferencia de Le Corbusier, «aprende de la calle»: aprender la distribución de lo actual es congelar el pasado como futuro; la subsunción estadística *forcluye lo posible* exactamente donde un proyecto de ciudad necesita abrirlo. Lo demostré desde el oficio: modelos de lenguaje de escala creciente, evaluados contra verdad de referencia exacta, mejoran en imitar la forma de los resultados sin ganar la capacidad de ejecutarlos ni de decidir su relevancia (Vallejo, 2026, §2) — escalar no cruza el umbral; solo perfecciona el retrato de lo que ya hay.
+
+Cultivar lo emergente tampoco es dejar hacer. El autómata de Schelling lo muestra desde dentro (fig. 2): basta una preferencia local leve para que la segregación global emerja sin que nadie la diseñe. Lo emergente no es benigno por ser espontáneo — el laissez-faire también es un plan, solo que sin dolientes. Cultivar significa aquí tres cláusulas: fijar condiciones de contorno (suelo, mezcla de usos, transporte), monitorear con el registro computacional los atractores que ya conocemos —la segregación se mide—, y someter al registro deliberativo qué emergencias son intolerables y disparan intervención. Es lo contrario de Hayek: para él, la métrica del orden espontáneo —el precio— está fuera de toda deliberación; aquí la métrica es *el* objeto deliberado. Y no es hipótesis: el urbanismo social de los dos mil —Metrocable, parques-biblioteca— fue exactamente eso, cultivo estatal de emergencia: cambió condiciones en las laderas sin decretar conductas, y la evidencia registró caídas diferenciales de violencia donde llegó el cable (Cerdá et al., 2012). Jacobs tenía el principio: la ciudad es complejidad organizada; no se diseña la vida de la acera — se habilitan sus condiciones generadoras.
+
+![Figura 2 — La emergencia no es benigna por ser espontánea](../ciencia/figs/D4_mega.png)
+*Figura 2 — Segregación emergiendo de preferencias locales leves (Schelling). La ciudad posible no decreta la mezcla ni la deja al azar: cultiva condiciones, monitorea umbrales, delibera la intervención (demostración D4; Tesis, Apéndice).*
+
+¿Y el agenciamiento humano? Tipo y medida quedan definidos por la asignación misma. El cómputo determinístico ejecuta lo formalizable —rutas, redes, hidráulica— con automatización bienvenida y materialmente barata: todo el aparato empírico de este ensayo corrió en un solo nodo universitario de 32 núcleos; la suficiencia no necesita hiperescaladores. La IA estadística *sugiere* —escenarios, patrones, borradores— sin autoridad para decidir, porque decidir exige un para-qué situado que no está en los datos. Y el juicio de relevancia —qué importa, qué se mide, qué ciudad queremos— queda reservado institucionalmente a quienes habitan, con el presupuesto participativo como su órgano. En esa arquitectura, el Banco Epistémico Urbano que desarrollo en la tesis de respaldo —un banco público de modelos, datos y contra-métricas— es el órgano epistémico de la ciudad, no su cerebro (Vallejo, 2026, §4).
+
+## 4. Cierre: el lunes por la mañana
+
+¿Quién asigna la asignación? La objeción del regreso merece respuesta constitucional: la frontera entre registros es ella misma un asunto deliberable, pero con marcadores que la disciplinan — donde hay algoritmo exacto y verdad de referencia verificable, se computa; donde métricas legítimas divergen (el test de la figura 1), se delibera; donde el resultado solo existe desplegándose (el test de la figura 2), se cultiva. La partición no es natural; lo que ofrezco es la constitución para disputarla.
+
+¿Y es posible, o es utopía con bibliografía? Hágase la prueba del lunes: el operador existe —EPM, empresa 100 % pública que aporta cerca del 20 % del presupuesto de la ciudad, y las universidades—; el vehículo legal existe —el presupuesto participativo (Acuerdo 028 de 2017), que ya delibera el 5 % de la inversión, y las veedurías ciudadanas de la Ley 850 de 2003—; el piloto de cien días es concreto —someter a deliberación pública una sola función objetivo ya operante, la métrica con que se priorizan hoy las intervenciones del centro—; los adversarios tienen nombre (los vendedores de vigilancia llave en mano, las administraciones que prefieren indicadores opacos); y el riesgo mayor —la captura— está tratado, no silenciado. Nada de esto requiere refundar la política ni inventar tecnología: requiere componer piezas que esta ciudad ya construyó, y una decisión que ningún modelo tomará por nosotros.
+
+A las seis de la tarde, en Junín, el ventero mueve su carreta dos metros. En la ciudad bien asignada, la cámara que lo mira tendrá una métrica pública, su junta podrá computar la contraria, y diciembre seguirá siendo ilegible para todos los tableros — porque esta ciudad reserva institucionalmente a sus habitantes lo único que ninguna máquina puede hacer: producir lo posible.
+
+---
 
 ## Bibliografía
-_(consolidar desde fuentes/)_
+
+- Augé, M. (2000). *Los no lugares: espacios del anonimato*. Gedisa. (Obra original de 1992).
+- Brand, P., & Dávila, J. D. (2011). Mobility innovation at the urban margins: Medellín's Metrocables. *City, 15*(6), 647–661.
+- Bueno, G. (1972). *Ensayos materialistas*. Taurus.
+- Cerdá, M., Morenoff, J. D., Hansen, B. B., Tessari Hicks, K. J., Duque, L. F., Restrepo, A., & Diez-Roux, A. V. (2012). Reducing violence by transforming neighborhoods: A natural experiment in Medellín, Colombia. *American Journal of Epidemiology, 175*(10), 1045–1053.
+- Crucitti, P., Latora, V., & Porta, S. (2006). Centrality measures in spatial networks of urban streets. *Physical Review E, 73*(3), 036125.
+- Deleuze, G. (1990). Post-scriptum sobre las sociedades de control. *L'Autre Journal, 1*.
+- Healey, P. (1997). *Collaborative planning: Shaping places in fragmented societies*. Macmillan.
+- Hui, Y. (2016). *The question concerning technology in China: An essay in cosmotechnics*. Urbanomic.
+- Jacobs, J. (2011). *Muerte y vida de las grandes ciudades* (Á. Abad, Trad.). Capitán Swing. (Obra original de 1961).
+- Jasanoff, S. (2013). Epistemic subsidiarity — Coexistence, cosmopolitanism, constitutionalism. *European Journal of Risk Regulation, 4*(2), 133–141.
+- Lefebvre, H. (2017). *El derecho a la ciudad* (I. Martínez, Trad.). Capitán Swing. (Obra original de 1968).
+- Merleau-Ponty, M. (1993). *Fenomenología de la percepción* (J. Cabanes, Trad.). Planeta-Agostini. (Obra original de 1945).
+- Ostrom, E. (1990). *Governing the commons: The evolution of institutions for collective action*. Cambridge University Press.
+- Scott, J. C. (1998). *Seeing like a state*. Yale University Press.
+- Searle, J. (1997). *La construcción de la realidad social* (A. Domènech, Trad.). Paidós. (Obra original de 1995).
+- Simmel, G. (1986). Las grandes urbes y la vida del espíritu. En *El individuo y la libertad* (S. Masó, Trad.). Península. (Obra original de 1903).
+- Vallejo, S. (2026). *La herramienta sobredimensionada y la aplicación faltante* [tesis de respaldo del presente ensayo: nueve demostraciones computacionales reproducibles, experimento T1–T6 y propuesta del Banco Epistémico Urbano]. Repositorio del curso, `tesis/00_tesis.md`.

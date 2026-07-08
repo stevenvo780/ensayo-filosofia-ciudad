@@ -1,0 +1,11 @@
+# Evidencia computacional (D1–D9) — Python 3.12
+# Instalar:  python -m venv .venv && .venv/bin/pip install -r requirements.txt
+# Correr:    .venv/bin/python ciencia/mega/D5_mega.py   (etc.)
+numpy==2.5.1
+scipy==1.18.0
+networkx==3.6.1
+osmnx==2.1.0          # descarga de redes reales OpenStreetMap (D2, D5, D6, D8)
+powerlaw==2.0.0       # MLE de la ley de potencia (D1)
+matplotlib==3.11.0
+pandas==3.0.3
+requests==2.34.2

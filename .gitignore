@@ -1,5 +1,35 @@
-node_modules/
-dist/
+# === Entornos y dependencias (regenerables — no son evidencia) ===
+.venv/
+venv*/
+**/node_modules/
+web/dist/
+web/.vercel/
+.vercel/
+
+# === Artefactos de build ===
+web/vite.config.js
+web/vite.config.d.ts
+*.tsbuildinfo
+web/src/content/          # generado por scripts/sync-content.mjs desde ../ensayo y ../tesis
+web/public/figs/          # copiado por sync-content.mjs desde ciencia/figs
+
+# === Secretos ===
+*.env.local
+.env
+.env.*
+!.env.example
+
+# === Python ===
+__pycache__/
+*.pyc
+*.pyo
+
+# === Logs y temporales de corridas ===
+*_run.log
 *.log
 .DS_Store
-venv*/
+
+# === Fuentes con copyright (NO se redistribuyen; ver fuentes/*/referencias-academicas.md) ===
+fuentes/**/*.pdf
+fuentes/**/*.rtf
+fuentes/**/*.epub
