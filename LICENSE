@@ -1,0 +1,50 @@
+Licencia del repositorio — «La ciudad bien asignada»
+Steven Vallejo Ortiz, 2026
+
+Este repositorio contiene dos tipos de obra con licencias distintas:
+
+────────────────────────────────────────────────────────────────────
+1) CÓDIGO Y DATOS DERIVADOS — Licencia MIT
+────────────────────────────────────────────────────────────────────
+Aplica a: los scripts de `ciencia/` (D1–D9), el sitio web de `web/`, los
+scripts de build, y las figuras y cachés de datos generados por ellos
+(`ciencia/figs/`, `ciencia/data/`, `cache/`).
+
+Copyright (c) 2026 Steven Vallejo Ortiz
+
+Se concede permiso, libre de cargo, a cualquier persona que obtenga una copia
+de este software y los archivos de datos asociados (el «Software»), para usar
+el Software sin restricción, incluyendo sin limitación los derechos de usar,
+copiar, modificar, fusionar, publicar, distribuir, sublicenciar y/o vender
+copias del Software, y permitir a las personas a quienes se les proporcione el
+Software hacer lo mismo, sujeto a la siguiente condición:
+
+El aviso de copyright anterior y este aviso de permiso se incluirán en todas
+las copias o partes sustanciales del Software.
+
+EL SOFTWARE SE PROPORCIONA «TAL CUAL», SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O
+IMPLÍCITA, INCLUYENDO PERO NO LIMITADO A LAS GARANTÍAS DE COMERCIABILIDAD,
+IDONEIDAD PARA UN PROPÓSITO PARTICULAR Y NO INFRACCIÓN. EN NINGÚN CASO LOS
+AUTORES O TITULARES DEL COPYRIGHT SERÁN RESPONSABLES DE NINGUNA RECLAMACIÓN,
+DAÑO U OTRA RESPONSABILIDAD, YA SEA EN UNA ACCIÓN DE CONTRATO, AGRAVIO O DE
+OTRO MODO, QUE SURJA DE, FUERA DE O EN CONEXIÓN CON EL SOFTWARE O EL USO U
+OTROS TRATOS EN EL SOFTWARE.
+
+────────────────────────────────────────────────────────────────────
+2) TEXTO DEL ENSAYO Y LA TESIS — © Todos los derechos reservados
+────────────────────────────────────────────────────────────────────
+Aplica a: `ensayo/`, `tesis/`, `GUION-DEFENSA.md`, `material/` y demás prosa
+académica.
+
+Copyright (c) 2026 Steven Vallejo Ortiz. Todos los derechos reservados.
+
+Estos textos son obra académica del autor, entregada para evaluación en la
+Universidad de Antioquia. Se publican para lectura, verificación y cita
+académica con atribución. No se autoriza su reproducción total o parcial con
+fines comerciales ni la creación de obras derivadas del texto sin permiso
+expreso del autor. Cítese como fuente indicando autor, título y este repositorio.
+
+────────────────────────────────────────────────────────────────────
+Fuentes de terceros: los datos empíricos provienen de GeoNames, OpenStreetMap
+(© colaboradores de OpenStreetMap, ODbL) y SRTM (NASA/USGS), bajo sus
+respectivas licencias. Los libros con copyright citados NO se redistribuyen aquí.

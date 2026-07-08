@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Contrast, Play } from "lucide-react";
+import { Contrast, Play, Github } from "lucide-react";
 import { Logo } from "./Logo";
 import { useTheme } from "../hooks/useTheme";
 import { useScrollSpy } from "../hooks/useScrollSpy";
@@ -49,6 +49,17 @@ export function Nav({ sections = [] }: { sections?: Section[] }) {
             <Play size={13} aria-hidden="true" /> Presentación
           </NavLink>
         </span>
+
+        <a
+          className="themeBtn gh"
+          href="https://github.com/stevenvo780/ensayo-filosofia-ciudad"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Código fuente y datos en GitHub"
+          title="Código fuente y datos (repositorio)"
+        >
+          <Github size={16} aria-hidden="true" />
+        </a>
 
         <button
           className="themeBtn"
