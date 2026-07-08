@@ -107,3 +107,27 @@ a { color: var(--accent); }
 }
 
 .nav .gh { text-decoration: none; align-items: center; justify-content: center; }
+
+/* === Índice del ensayo (colapsable) === */
+.prose .toc { border: 1px solid var(--line); border-radius: 12px; margin: 4px 0 10px;
+  background: color-mix(in srgb, var(--accent) 5%, transparent); }
+.prose .toc-head { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 9px;
+  padding: 13px 18px; font-weight: 700; color: var(--ink); font-size: .82rem; letter-spacing: .1em; text-transform: uppercase; }
+.prose .toc-head::-webkit-details-marker { display: none; }
+.prose .toc-head .chev { margin-left: auto; color: var(--muted); transition: transform .2s; }
+.prose details.toc[open] > .toc-head .chev { transform: rotate(90deg); }
+.prose .toc-list { margin: 0; padding: 2px 20px 16px 46px; }
+.prose .toc-list li { margin: 8px 0; line-height: 1.35; }
+.prose .toc-list a { color: var(--muted); text-decoration: none; }
+.prose .toc-list a:hover { color: var(--accent); text-decoration: underline; }
+
+/* === Secciones colapsables del ensayo === */
+.prose details.section { border-top: 1px solid var(--line); margin-top: 1.4em; }
+.prose .section-head { list-style: none; cursor: pointer; display: flex; align-items: flex-start; gap: 14px; }
+.prose .section-head::-webkit-details-marker { display: none; }
+.prose .section-head h2 { flex: 1; margin: .95em 0 .15em; padding-top: 0; scroll-margin-top: 78px; }
+.prose .section-head .chev { flex: none; margin-top: 1.5em; color: var(--muted); transition: transform .2s, color .2s; }
+.prose details.section[open] > .section-head .chev { transform: rotate(90deg); }
+.prose .section-head:hover h2, .prose .section-head:hover .chev { color: var(--accent); }
+.prose .section-body { animation: sectionIn .25s ease; }
+@keyframes sectionIn { from { opacity: 0; } to { opacity: 1; } }

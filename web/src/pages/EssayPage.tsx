@@ -1,11 +1,12 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import ensayoMd from "../content/ensayo.md?raw";
-import { parseDoc, ESSAY_SECTIONS } from "../lib/content";
+import { parseDoc } from "../lib/content";
 import { Nav } from "../components/Nav";
 import { Hero } from "../components/Hero";
 import { Footer } from "../components/Footer";
-import { Markdown } from "../components/Markdown";
+import { CollapsibleArticle } from "../components/CollapsibleArticle";
+import { TableOfContents } from "../components/TableOfContents";
 import { useRevealObserver } from "../hooks/useRevealObserver";
 
 export default function EssayPage() {
@@ -21,7 +22,7 @@ export default function EssayPage() {
       <a className="skip-link" href="#inicio">
         Saltar al contenido
       </a>
-      <Nav sections={ESSAY_SECTIONS} />
+      <Nav />
       <Hero
         kicker="Cartografía crítica · Filosofía de la Ciudad"
         title={title}
@@ -29,9 +30,10 @@ export default function EssayPage() {
         meta="Steven Vallejo Ortiz · Universidad de Antioquia · 10 de julio de 2026"
       />
       <main id="inicio" className="prose">
-        <Markdown>{body}</Markdown>
+        <TableOfContents>{body}</TableOfContents>
+        <CollapsibleArticle>{body}</CollapsibleArticle>
         <div className="readmore">
-          Este ensayo se apoya en una <strong>tesis de respaldo</strong> con cinco demostraciones
+          Este ensayo se apoya en una <strong>tesis de respaldo</strong> con nueve demostraciones
           computacionales reproducibles, el experimento T1–T6 y la propuesta del Banco Epistémico
           Urbano. <Link to="/tesis">Leer la tesis ↗</Link> ·{" "}
           <Link to="/presentacion">Ver la presentación ↗</Link>
