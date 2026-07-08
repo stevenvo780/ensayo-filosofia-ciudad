@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Contrast, Play, Github } from "lucide-react";
+import { Contrast, Play, Github, Download } from "lucide-react";
 import { Logo } from "./Logo";
 import { useTheme } from "../hooks/useTheme";
 import { useScrollSpy } from "../hooks/useScrollSpy";
@@ -49,6 +49,16 @@ export function Nav({ sections = [] }: { sections?: Section[] }) {
             <Play size={13} aria-hidden="true" /> Presentación
           </NavLink>
         </span>
+
+        <a
+          className="cta pdf-link"
+          href="/ensayo-la-ciudad-bien-asignada.pdf"
+          download
+          aria-label="Descargar el ensayo en PDF"
+          title="Descargar el ensayo (PDF, 2000–2500 palabras)"
+        >
+          <Download size={13} aria-hidden="true" /> PDF
+        </a>
 
         <a
           className="themeBtn gh"

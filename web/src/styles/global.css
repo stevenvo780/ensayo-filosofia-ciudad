@@ -177,3 +177,7 @@ a { color: var(--accent); }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal { opacity: 1 !important; transform: none !important; } html { scroll-behavior: auto; }
 }
+
+/* botón de descarga del PDF (el entregable) */
+.nav .pdf-link { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); color: var(--accent); }
+.nav .pdf-link:hover { color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, transparent); }
