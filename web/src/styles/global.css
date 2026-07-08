@@ -128,6 +128,13 @@ a { color: var(--accent); }
 .essay-layout .prose { max-width: 46rem; margin: 0; padding: 0; }
 .essay-side { position: sticky; top: clamp(78px, 8vw, 104px); }
 
+/* al COLAPSAR el índice, libera la columna: el texto pasa a una sola columna centrada */
+.essay-layout:has(.essay-side details.toc:not([open])) { grid-template-columns: minmax(0, 1fr); }
+.essay-layout:has(.essay-side details.toc:not([open])) .prose { margin-inline: auto; }
+.essay-layout:has(.essay-side details.toc:not([open])) .essay-side {
+  position: static; top: auto; max-width: 46rem; margin: 0 auto; }
+.essay-layout:has(.essay-side details.toc:not([open])) .essay-side .toc-head { padding-bottom: 4px; }
+
 /* índice — minimalista (línea vertical + activo ámbar, sin caja) */
 .essay-side .toc { border: 0; background: none; }
 .essay-side .toc-head { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 7px;
