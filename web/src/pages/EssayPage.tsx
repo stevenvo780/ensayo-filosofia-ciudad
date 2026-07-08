@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Play, BookOpen } from "lucide-react";
 import ensayoMd from "../content/ensayo.md?raw";
 import { parseDoc } from "../lib/content";
 import { Nav } from "../components/Nav";
@@ -28,6 +29,16 @@ export default function EssayPage() {
         title={title}
         subtitle={subtitle}
         meta="Steven Vallejo Ortiz · Universidad de Antioquia · 10 de julio de 2026"
+        actions={
+          <>
+            <Link className="primary" to="/presentacion">
+              <Play size={14} aria-hidden="true" /> Ver presentación
+            </Link>
+            <Link className="secondary" to="/tesis">
+              <BookOpen size={14} aria-hidden="true" /> Leer la tesis
+            </Link>
+          </>
+        }
       />
       <div className="essay-layout">
         <aside className="essay-side">

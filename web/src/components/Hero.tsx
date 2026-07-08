@@ -7,9 +7,10 @@ interface HeroProps {
   title: string;
   subtitle: string;
   meta: ReactNode;
+  actions?: ReactNode;
 }
 
-export function Hero({ kicker, title, subtitle, meta }: HeroProps) {
+export function Hero({ kicker, title, subtitle, meta, actions }: HeroProps) {
   return (
     <header className="hero">
       <NetworkCanvas className="hero-net" opacity={0.42} />
@@ -21,6 +22,7 @@ export function Hero({ kicker, title, subtitle, meta }: HeroProps) {
         <h1>{title}</h1>
         <p className="sub">{subtitle}</p>
         <p className="meta">{meta}</p>
+        {actions && <div className="actions">{actions}</div>}
       </div>
     </header>
   );

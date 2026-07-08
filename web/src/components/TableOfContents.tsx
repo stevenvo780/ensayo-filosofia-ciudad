@@ -15,7 +15,7 @@ export function TableOfContents({ children }: { children: string }) {
         .split("\n")
         .filter((l) => l.startsWith("## "))
         .map((l) => l.replace(/^##\s*/, "").trim())
-        .map((h) => ({ id: sectionId(h), label: h })),
+        .map((h) => ({ id: sectionId(h), label: h.includes(":") ? h.slice(0, h.indexOf(":")).trim() : h })),
     [children],
   );
   const ids = useMemo(() => items.map((i) => i.id), [items]);
