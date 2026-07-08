@@ -15,6 +15,7 @@ export default function EssayPage() {
   useRevealObserver(body);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     document.title = "La ciudad bien asignada — cartografía crítica de una Medellín posible";
   }, []);
 
