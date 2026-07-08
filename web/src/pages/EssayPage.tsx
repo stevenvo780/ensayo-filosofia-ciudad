@@ -18,7 +18,7 @@ export default function EssayPage() {
   }, []);
 
   return (
-    <>
+    <div className="essay-page">
       <a className="skip-link" href="#inicio">
         Saltar al contenido
       </a>
@@ -29,17 +29,21 @@ export default function EssayPage() {
         subtitle={subtitle}
         meta="Steven Vallejo Ortiz · Universidad de Antioquia · 10 de julio de 2026"
       />
-      <main id="inicio" className="prose">
-        <TableOfContents>{body}</TableOfContents>
-        <CollapsibleArticle>{body}</CollapsibleArticle>
-        <div className="readmore">
-          Este ensayo se apoya en una <strong>tesis de respaldo</strong> con nueve demostraciones
-          computacionales reproducibles, el experimento T1–T6 y la propuesta del Banco Epistémico
-          Urbano. <Link to="/tesis">Leer la tesis ↗</Link> ·{" "}
-          <Link to="/presentacion">Ver la presentación ↗</Link>
-        </div>
-      </main>
+      <div className="essay-layout">
+        <aside className="essay-side">
+          <TableOfContents>{body}</TableOfContents>
+        </aside>
+        <main id="inicio" className="prose">
+          <CollapsibleArticle>{body}</CollapsibleArticle>
+          <div className="readmore">
+            Este ensayo se apoya en una <strong>tesis de respaldo</strong> con nueve demostraciones
+            computacionales reproducibles, el experimento T1–T6 y la propuesta del Banco Epistémico
+            Urbano. <Link to="/tesis">Leer la tesis ↗</Link> ·{" "}
+            <Link to="/presentacion">Ver la presentación ↗</Link>
+          </div>
+        </main>
+      </div>
       <Footer title={title} />
-    </>
+    </div>
   );
 }
