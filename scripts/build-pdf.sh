@@ -12,10 +12,14 @@ CHROME="${CHROME:-/opt/google/chrome/chrome}"
 
 cat > "$HEAD" <<'CSS'
 <style>
-@page { size: Letter; margin: 2.3cm 2.3cm 2.1cm; }
+@page { size: Letter; margin: 2.54cm; }  /* APA 7: 1 pulgada en los cuatro lados */
 * { box-sizing: border-box; }
-body { font-family: Georgia, "Times New Roman", serif; font-size: 11.4pt; line-height: 1.5;
-  color: #1b1b1b; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin: 0; }
+/* anula el max-width que pandoc impone por defecto (causaba márgenes laterales enormes) */
+html, body { max-width: none !important; width: auto !important; margin: 0 !important; padding: 0 !important; }
+/* el título del documento lo pone el propio markdown (# ...); ocultamos el bloque que pandoc duplica */
+#title-block-header { display: none; }
+body { font-family: Georgia, "Times New Roman", serif; font-size: 11.7pt; line-height: 1.5;
+  color: #1b1b1b; text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
 h1 { text-align: center; font-size: 21pt; font-weight: 700; line-height: 1.12; letter-spacing: -.01em; margin: 0 0 3pt; }
 h1 + h2 { text-align: center; font-weight: 400; font-style: italic; font-size: 13pt; color: #444; border: 0; margin: 2pt 0 11pt; }
 h1 + h2 + p { text-align: center; font-size: 9.3pt; color: #555; margin: 0 0 13pt; }
@@ -45,7 +49,7 @@ CSS
 
 cat > "$AFTER" <<'HTML'
 <div class="colophon">
-  <p class="colo-title">Recursos y reproducibilidad — este documento se sostiene por sí mismo</p>
+  <p class="colo-title">Recursos y reproducibilidad</p>
   <p><strong>Versión interactiva</strong>, con animaciones que explican las demostraciones (la métrica que decide el centro, Schelling en vivo, la tríada computa/cultiva/delibera): <a href="https://autopoesis.stevenvallejo.com">autopoesis.stevenvallejo.com</a></p>
   <p><strong>Código, datos reales de Medellín (OpenStreetMap, SRTM, GeoNames) y tesis de respaldo</strong> — todo abierto y reproducible: <a href="https://github.com/stevenvo780/ensayo-filosofia-ciudad">github.com/stevenvo780/ensayo-filosofia-ciudad</a></p>
   <p><strong>Tesis de respaldo</strong> (aparato empírico completo, nueve demostraciones): <a href="https://autopoesis.stevenvallejo.com/tesis">autopoesis.stevenvallejo.com/tesis</a> &nbsp;·&nbsp; <strong>Presentación</strong>: <a href="https://autopoesis.stevenvallejo.com/presentacion">autopoesis.stevenvallejo.com/presentacion</a></p>
