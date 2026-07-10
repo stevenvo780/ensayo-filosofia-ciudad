@@ -30,7 +30,7 @@ function copy(from, to, label) {
 
 copy("ensayo/00_ensayo.md", "src/content/ensayo.md", "ensayo");
 copy("tesis/00_tesis.md", "src/content/tesis.md", "tesis");
-for (const d of ["D1", "D2", "D3", "D4", "D5", "D6", "D7", "D8"]) {
+for (const d of ["D1", "D2", "D3", "D4", "D5", "D6", "D7", "D8", "D10", "D11", "D12", "D13"]) {
   copy(`ciencia/figs/${d}_mega.png`, `public/figs/${d}_mega.png`, `figs/${d}_mega.png`);
 }
 

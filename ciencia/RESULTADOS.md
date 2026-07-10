@@ -23,6 +23,10 @@
 | D7 | Umbral de intervención anti-segregación (Schelling con palanca) | vivienda **indiferente NO** rompe el sorting (0.87→0.95); vivienda **anclada/integrada** sí, umbral **~55 %** para bajar de 0.65 | Schelling 300² (tol 0.5), 2 palancas | sintética (compute-bound) | `figs/D7_mega.png` |
 | D8 | Escala CIUDAD (radio 4 km): D5+D6 sobre red real mayor | **22.863 nodos**; desnivel **962 m**; prominencia **7.6×**; Jaccard métrica-decide-centro **0.08**; centro del cuerpo a **710 m** del flujo | **red REAL de Medellín (4 km) + SRTM** | dato real | `figs/D8_mega.png` |
 | D9 | Robustez / significancia de D5 vs grafos nulos | prominencia real **9.76** vs nulos 2.73 → **z = 188** (estructura real, no artefacto); divergencia de métricas ≈ nulos (propiedad general) | red REAL D5 + 60 nulos degree-preserving | dato real | — |
+| D10 | Juego de congestión (Wardrop/Braess) sobre la red vial real | **PoA = 1.02**; una **arista-Braess robusta** (cerrarla mejora el tiempo agregado **+1.38 %**; el resto 0.1–0.26 %, piso de ruido de Frank-Wolfe, gap 0.009) | **red REAL de Medellín (4 km): 22.863 nodos, 33.988 aristas**; demanda O-D **sintética** (300 zonas); BPR α=0.15 β=4 | sintético-sobre-red-real (demanda O-D sintética) | `figs/D10_mega.png` |
+| D11 | Juego de localización de Hotelling (comercio informal) | el comercio informal **se aglomera**: aglomeración **2.3×** vs azar y **2.6×** vs el óptimo social (N=40); robusto en el barrido N=10–60 (2.1–3.9× vs óptimo); cobertura 41–63 % peor | **red REAL de Medellín: 7.598 nodos**; demanda ∝ densidad local | dato real (de red) | `figs/D11_mega.png` |
+| D12 | Difusión / esparcimiento sobre el grafo real | footfall = campo **difuso** (top 1 % concentra 2.4 %; Spearman vs grado 0.47; vs elevación −0.04); isócronas de 15 min encogen **16 %** en el centro plano y **24 %** en la ladera | **red REAL de Medellín (22.863 nodos) + SRTM 30 m** | dato real (de red) | `figs/D12_mega.png` |
+| D13 | Teoría de la decisión (minimax-regret) sobre la red real | las 4 centralidades rankean nodos casi disjuntos (**Jaccard medio 0.03**); el minimax-regret formal elige eigenvector por **patología** (0.965 en 200 nodos) → sin esa métrica, top_betweenness robusto (precio 0.12) y el portafolio mixto casi empata (0.13): **margen irreducible** | **red REAL de Medellín (22.863 nodos)**; 4 centralidades | dato real (de red) | `figs/D13_mega.png` |
 
 ---
 
@@ -144,3 +148,60 @@ Se compara la red real D5 contra un ensemble de **60 grafos nulos** con la misma
   indistinguible). Consistente con citar D5 como *verificación local de un resultado conocido*
   (Crucitti et al., 2006): que la métrica decide el centro es robusto y general. Código
   `ciencia/mega/D9_robustez.py`.
+
+## D10 — Juego de congestión (Wardrop/Braess) sobre la red vial real (eje TÉCNICA / PODER)
+Sobre la red peatonal real de Medellín de radio 4 km (**22.863 nodos, 33.988 aristas**, la misma de
+D8) usada como topología vial, se resuelve el **equilibrio de usuario** (cada viaje minimiza su
+propio tiempo, Wardrop) y el **óptimo social** por **Frank-Wolfe**, con costo **BPR**
+`t(f) = t0·(1 + α·(f/cap)^β)`, α = 0.15, β = 4 (valores estándar FHWA) y demanda O-D **sintética**
+uniforme entre **300 zonas**. El **precio de la anarquía es PoA = 1.02**: el egoísmo de ruta cuesta
+sólo ~2 % de tiempo agregado sobre el óptimo. El escaneo de la **paradoja de Braess** sobre las 30
+aristas más cargadas encuentra **una arista-Braess robusta**: cerrarla mejora el tiempo total
+agregado **+1.38 %** (arista en ~[6.2688, −75.5430]); las demás dan 0.1–0.26 %, que es el **piso de
+ruido** de Frank-Wolfe (gap relativo 0.009). HONESTIDAD: la demanda es sintética, la red peatonal se
+usa como topología vial y la capacidad es constante, de modo que las magnitudes son modestas; lo
+**robusto** es el hallazgo cualitativo —existe efecto Braess: cerrar una calle puede mejorar el flujo
+agregado—, no la cifra fina. Encuadre autopoiético: el óptimo del **todo** no es la suma de los
+óptimos egoístas de las **partes** (Braess = **autonomía del todo sobre las partes**). Código
+`ciencia/mega/D10_congestion.py`.
+
+## D11 — Juego de localización de Hotelling: el comercio informal se aglomera (eje PODER / ONTOLÓGICO)
+N vendedores informales eligen cada uno un nodo de la **red peatonal real** del centro de Medellín
+(**7.598 nodos**, la de D5), con demanda proporcional a la **densidad local**; se comparan el
+equilibrio de mejor-respuesta, el reparto **al azar** y el **óptimo social** de cobertura (p-mediana
+greedy). Resultado: el comercio informal **se aglomera** —índice de aglomeración **2.3×** respecto
+del azar y **2.6×** respecto del óptimo social (para N = 40)—, patrón **robusto** en todo el barrido
+N = 10–60 (aglomeración vs óptimo entre **2.1× y 3.9×**); el precio es una cobertura **41–63 % peor**
+que la óptima. HONESTIDAD: la mejor-respuesta **cicla** (no hay Nash puro; se fotografía una
+oscilación estable), la demanda es un proxy de densidad y el modelo no incluye precios, arriendo ni
+control policial. Encuadre autopoiético: el foco comercial es un orden que **se auto-organiza** desde
+decisiones locales —**auto-organización**—, no un desorden que corregir (el apiñamiento de Junín como
+equilibrio emergente). Código `ciencia/mega/D11_hotelling.py`.
+
+## D12 — Difusión y esparcimiento sobre el grafo real (eje ONTOLÓGICO)
+Sobre la red real de radio 4 km (**22.863 nodos**) + elevación SRTM 30 m se calcula el **footfall**
+(distribución estacionaria de una caminata ponderada por el esfuerzo de Tobler) y las **isócronas de
+15 min** (frente de difusión por Dijkstra en tiempo). El footfall sale como un **campo DIFUSO**, no
+como hotspots: el top 1 % de nodos concentra apenas **2.4 %** de la masa, correlación de Spearman con
+el grado **0.47** y **desacoplado** de la elevación (−0.04). La pendiente sí **encoge el alcance**: la
+isócrona de 15 min pasa de 3.63 a 3.05 km² en el **centro plano** (**−16 %**) y de 1.45 a 1.10 km² en
+la **ladera** (**−24 %**). HONESTIDAD: el footfall salió **difuso** (no dramático) y se reporta tal
+cual; el hallazgo con filo es la **asimetría del alcance** por pendiente. Encuadre autopoiético: el
+footfall es un **campo relacional** cerrado sobre la propia red —la ciudad como circulación que se
+sostiene a sí misma, **clausura operacional**— y el terreno reescribe su alcance (acoplamiento con el
+medio). Código `ciencia/mega/D12_difusion.py`.
+
+## D13 — Teoría de la decisión (minimax-regret): el margen que ningún optimizador fija (eje PODER)
+Sobre la misma red real (**22.863 nodos**) se toman **cuatro** medidas de centralidad (betweenness,
+closeness, eigenvector, grado) y se pregunta, con **teoría de la decisión** formal, si existe un
+portafolio de intervención **robusto** a la incertidumbre sobre cuál métrica importa. Las cuatro
+rankean nodos **casi disjuntos** (**Jaccard medio 0.03**; eigenvector comparte 0 con las otras tres).
+El **minimax-regret** formal elige eigenvector, pero **por una patología**: es hiper-localizada
+(concentra 0.965 de su masa en 200 nodos), de modo que sobre las cuatro métricas **no** hay una
+decisión robusta buena. Excluyendo esa métrica degenerada, **top_betweenness** es la robusta (precio
+del regret 0.12) y el **portafolio mixto** casi empata (0.13). Lectura: hay un **margen irreducible**
+que ningún optimizador fija —**decidir qué métrica importa es exterior a la optimización**—.
+HONESTIDAD: el resultado formal «gana eigenvector» es un artefacto de la degeneración de esa métrica,
+y así se reporta; lo sólido es el margen, no el ganador nominal. Encuadre autopoiético: ese resto no
+optimizable es el **margen inmanente** donde la ciudad decide sobre sí misma, no un dato que la
+técnica resuelva. Código `ciencia/mega/D13_decision.py`.

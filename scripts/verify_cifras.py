@@ -163,13 +163,13 @@ CANON = [
     # ---- D5 · Red real del centro de Medellín ----
     D("nodos", "nodos de la red peatonal real", "D5/D8", {7598, 22863}, 0.0,
       [r"(" + NUM + r")\s+nodos"]),
-    D("aristas", "aristas de la red peatonal real", "D5", {11856}, 0.0,
+    D("aristas", "aristas de la red peatonal real", "D5/D10", {11856, 33988}, 0.0,
       [r"(" + NUM + r")\s+aristas"]),
-    D("prominencia_x", "prominencia del eje (× la media)", "D5/D8",
-      {6.1, 7.6, 8000, 8192}, 0.0,
+    D("prominencia_x", "prominencia / aglomeración (× la media o el óptimo)",
+      "D5/D8/D11", {6.1, 7.6, 8000, 8192, 2.1, 2.3, 2.6, 3.9}, 0.0,
       [r"(" + NUM + r")\s*×", r"(\d[.,]\d)\s+veces"]),
-    D("jaccard", "solapamiento de Jaccard entre métricas", "D5/D6/D8/D9",
-      {0.00, 0.04, 0.08, 0.10, 0.53, 0.226, 0.192, 0.023}, 0.0,
+    D("jaccard", "solapamiento de Jaccard entre métricas", "D5/D6/D8/D9/D13",
+      {0.00, 0.03, 0.04, 0.08, 0.10, 0.53, 0.226, 0.192, 0.023}, 0.0,
       kind="window", anchor=r"Jaccard", window=80, token=r"0[.,]\d{2,3}\b"),
 
     # ---- D6 / D8 · Métrica del cuerpo (pendiente) y escala ciudad ----
@@ -195,9 +195,19 @@ CANON = [
     D("k_muestreo", "muestreo de betweenness (k)", "D8", {1500}, 0.0,
       [r"k\s*=\s*(\d+)"]),
 
+    # ---- D10–D13 · nuevos experimentos (congestión, Hotelling, difusión, decisión) ----
+    D("poa", "precio de la anarquía (PoA)", "D10", {1.02}, 0.0,
+      [r"anarquía[^0-9\n]{0,15}(" + NUM + r")"]),
+    D("zonas", "zonas O-D de la demanda sintética", "D10", {300}, 0.0,
+      [r"(\d+)\s+zonas"]),
+    D("vendedores", "vendedores informales (Hotelling)", "D11", {40}, 0.0,
+      [r"(\d+)\s+vendedores"]),
+    D("minutos", "ventana de la isócrona (min)", "D12", {15}, 0.0,
+      [r"(\d+)\s*min(?:utos)?\b"]),
+
     # ---- Experimento T1–T6 (solo en la tesis) ----
-    D("porcentaje", "porcentajes empíricos e institucionales", "EXP/POL",
-      {5, 20, 53, 55, 70, 75, 83, 90, 92, 93, 95, 100}, 0.0,
+    D("porcentaje", "porcentajes empíricos e institucionales", "EXP/POL/D10/D11/D12",
+      {1, 1.38, 2.4, 5, 16, 20, 24, 53, 55, 70, 75, 83, 90, 92, 93, 95, 100}, 0.0,
       [r"(" + NUM + r")\s*%"]),
     D("aciertos_10", "aciertos sobre 10 celdas (T1–T6)", "EXP", {7, 9}, 0.0,
       [r"\b([0-9])/10\b"]),
