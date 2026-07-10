@@ -1,6 +1,8 @@
 import { Children, isValidElement, type ReactNode } from "react";
 import ReactMarkdown, { type Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 import { sectionId } from "../lib/content";
 
 /** Texto plano de un árbol de nodos React (para derivar ids de encabezado). */
@@ -46,7 +48,11 @@ const components: Components = {
 
 export function Markdown({ children }: { children: string }) {
   return (
-    <ReactMarkdown remarkPlugins={[remarkGfm]} components={components}>
+    <ReactMarkdown
+      remarkPlugins={[remarkGfm, remarkMath]}
+      rehypePlugins={[rehypeKatex]}
+      components={components}
+    >
       {children}
     </ReactMarkdown>
   );

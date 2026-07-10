@@ -58,7 +58,7 @@ cat > "$AFTER" <<'HTML'
 HTML
 
 cd "$ROOT/ensayo"
-pandoc 00_ensayo.md -f markdown-implicit_figures -t html5 --standalone --embed-resources \
+pandoc 00_ensayo.md -f markdown-implicit_figures -t html5 --standalone --embed-resources --mathml \
   --include-in-header="$HEAD" --include-after-body="$AFTER" \
   -M title="La ciudad bien asignada — cartografía crítica de una Medellín posible" \
   -o "$HTML"

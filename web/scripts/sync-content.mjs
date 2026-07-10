@@ -34,6 +34,17 @@ for (const d of ["D1", "D2", "D3", "D4", "D5", "D6", "D7", "D8", "D10", "D11", "
   copy(`ciencia/figs/${d}_mega.png`, `public/figs/${d}_mega.png`, `figs/${d}_mega.png`);
 }
 
+// Diagramas conceptuales (SVG) → public/figs/diagramas/ — sirven a web Y PDF desde la misma fuente.
+const diagDir = resolve(REPO, "ciencia/figs/diagramas");
+if (existsSync(diagDir)) {
+  ensureDir(resolve(WEB, "public/figs/diagramas"));
+  for (const f of readdirSync(diagDir)) {
+    if (f.toLowerCase().endsWith(".svg")) {
+      copy(`ciencia/figs/diagramas/${f}`, `public/figs/diagramas/${f}`, `figs/diagramas/${f}`);
+    }
+  }
+}
+
 // Espejo de materiales: TODOS los .md del proyecto legibles y descargables en la
 // web (/materiales/<archivo>), con nombres legibles. Tolerante: si falta alguno,
 // se salta sin romper el build.

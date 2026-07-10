@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 452" width="820" height="452" role="img" aria-label="Autopoiesis cerrada frente a autopoiesis abierta">
+  <defs>
+    <marker id="ac-grey" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a99f92"/>
+    </marker>
+    <marker id="ac-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b25a24"/>
+    </marker>
+  </defs>
+
+  <!-- card -->
+  <rect x="1.5" y="1.5" width="817" height="449" rx="18" fill="#faf7f2" stroke="#e7ddcf" stroke-width="1.5"/>
+  <line x1="410" y1="44" x2="410" y2="392" stroke="#e6dccc" stroke-width="1" stroke-dasharray="2 5"/>
+
+  <!-- ============ LEFT · CERRADA ============ -->
+  <text x="205" y="42" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="700" fill="#b25a24" letter-spacing="0.04em">CERRADA</text>
+  <text x="205" y="60" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8a8178">una sola distinción subsume el resto</text>
+
+  <!-- inputs -->
+  <g font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" fill="#3a352f">
+    <text x="34" y="147" text-anchor="start">el cuerpo</text>
+    <text x="34" y="211" text-anchor="start">la informalidad</text>
+    <text x="34" y="275" text-anchor="start">la deliberación</text>
+  </g>
+  <circle cx="150" cy="143" r="4.5" fill="#b25a24"/>
+  <circle cx="150" cy="207" r="4.5" fill="#b25a24"/>
+  <circle cx="150" cy="271" r="4.5" fill="#b25a24"/>
+  <!-- converging into a single gate -->
+  <path d="M158,143 L214,199" fill="none" stroke="#a99f92" stroke-width="1.3" marker-end="url(#ac-grey)"/>
+  <path d="M158,207 L214,207" fill="none" stroke="#a99f92" stroke-width="1.3" marker-end="url(#ac-grey)"/>
+  <path d="M158,271 L214,215" fill="none" stroke="#a99f92" stroke-width="1.3" marker-end="url(#ac-grey)"/>
+  <!-- the single distinction / gate -->
+  <rect x="222" y="185" width="92" height="46" rx="9" fill="#b25a24"/>
+  <text x="268" y="204" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9" font-weight="700" fill="#fdf7f0">UNA</text>
+  <text x="268" y="219" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#fdf7f0">distinción</text>
+  <!-- output: uniform order, rest as noise -->
+  <path d="M314,208 L344,208" fill="none" stroke="#a99f92" stroke-width="1.3" marker-end="url(#ac-grey)"/>
+  <rect x="346" y="188" width="42" height="40" rx="7" fill="#ded5c7"/>
+  <text x="367" y="212" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9" fill="#8f8578">orden</text>
+  <text x="205" y="330" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" font-style="italic" fill="#6b6459">el resto queda como ruido</text>
+  <text x="205" y="374" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8a8178">funcionalismo (el plano) · smart city (la métrica)</text>
+
+  <!-- ============ RIGHT · ABIERTA ============ -->
+  <text x="615" y="42" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="700" fill="#b25a24" letter-spacing="0.04em">ABIERTA</text>
+  <text x="615" y="60" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8a8178">los componentes reingresan y disputan</text>
+
+  <!-- triangle of distinctions (a cycle, none subsumed) -->
+  <line x1="615" y1="150" x2="558" y2="264" stroke="#c98a5c" stroke-width="1.4"/>
+  <line x1="558" y1="264" x2="672" y2="264" stroke="#c98a5c" stroke-width="1.4"/>
+  <line x1="672" y1="264" x2="615" y2="150" stroke="#c98a5c" stroke-width="1.4"/>
+  <circle cx="615" cy="150" r="6" fill="#b25a24"/>
+  <circle cx="558" cy="264" r="6" fill="#b25a24"/>
+  <circle cx="672" cy="264" r="6" fill="#b25a24"/>
+  <g font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" fill="#3a352f">
+    <text x="615" y="138" text-anchor="middle">métrica</text>
+    <text x="540" y="284" text-anchor="middle">cuerpo</text>
+    <text x="690" y="284" text-anchor="middle">voz</text>
+  </g>
+  <text x="615" y="221" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" font-style="italic" fill="#6b6459">se disputan</text>
+  <!-- re-entry loop (reingreso) -->
+  <path d="M683,258 C742,232 742,168 668,146" fill="none" stroke="#b25a24" stroke-width="1.6" marker-end="url(#ac-amber)"/>
+  <text x="742" y="208" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#b25a24" transform="rotate(90 742 208)">reingreso</text>
+  <text x="615" y="374" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" font-style="italic" fill="#6b6459">ninguna distinción es «la» ciudad</text>
+
+  <!-- bottom caption -->
+  <line x1="40" y1="404" x2="780" y2="404" stroke="#ece3d5" stroke-width="1"/>
+  <text x="410" y="428" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11.5" fill="#514b43">El peligro no es que una máquina la gobierne desde afuera, sino que su autoproducción <tspan font-style="italic">se cierre</tspan>.</text>
+</svg>
