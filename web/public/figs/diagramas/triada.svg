@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 380" width="820" height="380" role="img" aria-label="La tríada de la propuesta: Computa, Cultiva, Delibera">
+  <defs>
+    <marker id="tri-grey" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a99f92"/>
+    </marker>
+    <marker id="tri-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b25a24"/>
+    </marker>
+  </defs>
+
+  <!-- card -->
+  <rect x="1.5" y="1.5" width="817" height="377" rx="18" fill="#faf7f2" stroke="#e7ddcf" stroke-width="1.5"/>
+
+  <!-- ============ COLUMN 1: COMPUTA ============ -->
+  <g>
+    <!-- glyph: three linked circles (computation) -->
+    <circle cx="137" cy="74" r="4.5" fill="#b25a24"/>
+    <circle cx="167" cy="74" r="4.5" fill="#b25a24"/>
+    <circle cx="197" cy="74" r="4.5" fill="#b25a24"/>
+    <line x1="141.5" y1="74" x2="162.5" y2="74" stroke="#c98a5c" stroke-width="1.2"/>
+    <line x1="171.5" y1="74" x2="192.5" y2="74" stroke="#c98a5c" stroke-width="1.2"/>
+
+    <!-- title -->
+    <text x="167" y="130" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="700" fill="#b25a24" letter-spacing="0.04em">COMPUTA</text>
+
+    <!-- criterion (mono, apagado) -->
+    <text x="167" y="158" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8a8178">algoritmo exacto</text>
+    <text x="167" y="171" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8a8178">verdad de referencia</text>
+
+    <!-- example (Georgia italic, caption) -->
+    <text x="167" y="204" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" font-style="italic" fill="#6b6459">rutas</text>
+    <text x="167" y="221" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" font-style="italic" fill="#6b6459">acueductos</text>
+    <text x="167" y="238" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" font-style="italic" fill="#6b6459">redes</text>
+  </g>
+
+  <!-- ============ COLUMN 2: CULTIVA ============ -->
+  <g>
+    <!-- glyph: seedling / branching upward -->
+    <line x1="410" y1="90" x2="410" y2="50" stroke="#b25a24" stroke-width="2" stroke-linecap="round"/>
+    <path d="M410,70 L390,60 M410,70 L430,60" stroke="#b25a24" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <path d="M410,80 L385,72 M410,80 L435,72" stroke="#b25a24" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+    <!-- title -->
+    <text x="410" y="130" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="700" fill="#b25a24" letter-spacing="0.04em">CULTIVA</text>
+
+    <!-- criterion (mono, apagado) -->
+    <text x="410" y="158" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8a8178">fija condiciones</text>
+    <text x="410" y="171" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8a8178">no decreta</text>
+
+    <!-- example (Georgia italic, caption) -->
+    <text x="410" y="204" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" font-style="italic" fill="#6b6459">suelo</text>
+    <text x="410" y="221" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" font-style="italic" fill="#6b6459">usos</text>
+    <text x="410" y="238" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" font-style="italic" fill="#6b6459">transporte</text>
+  </g>
+
+  <!-- ============ COLUMN 3: DELIBERA ============ -->
+  <g>
+    <!-- glyph: question mark / choice / deliberation -->
+    <circle cx="683" cy="65" r="12" fill="none" stroke="#b25a24" stroke-width="1.6"/>
+    <text x="683" y="76" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="700" fill="#b25a24">?</text>
+
+    <!-- title -->
+    <text x="683" y="130" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="700" fill="#b25a24" letter-spacing="0.04em">DELIBERA</text>
+
+    <!-- criterion (mono, apagado) -->
+    <text x="683" y="158" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8a8178">relevancia que ningún</text>
+    <text x="683" y="171" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8a8178">optimizador se fija a sí</text>
+
+    <!-- example (Georgia italic, caption) -->
+    <text x="683" y="204" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" font-style="italic" fill="#6b6459">qué se mide</text>
+    <text x="683" y="221" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" font-style="italic" fill="#6b6459">qué se vigila</text>
+  </g>
+
+  <!-- divider line -->
+  <line x1="40" y1="280" x2="780" y2="280" stroke="#ece3d5" stroke-width="1"/>
+
+  <!-- bottom caption -->
+  <text x="410" y="330" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11.5" fill="#514b43">cada asunto urbano, al registro capaz de resolverlo</text>
+</svg>

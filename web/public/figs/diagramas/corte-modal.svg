@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 424" width="820" height="424" role="img" aria-label="El corte por aspecto y no por asunto: un mismo semáforo descompuesto en tres aspectos simultáneos — núcleo computable que computa, métrica disputable que delibera y efectos emergentes que cultiva">
+  <defs>
+    <marker id="cm-grey" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a99f92"/>
+    </marker>
+    <marker id="cm-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b25a24"/>
+    </marker>
+  </defs>
+
+  <!-- card -->
+  <rect x="1.5" y="1.5" width="817" height="421" rx="18" fill="#faf7f2" stroke="#e7ddcf" stroke-width="1.5"/>
+
+  <!-- title -->
+  <text x="410" y="42" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="700" fill="#b25a24" letter-spacing="0.04em">EL CORTE POR ASPECTO, NO POR ASUNTO</text>
+  <text x="410" y="60" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8a8178">un mismo objeto, tres aspectos encendidos a la vez</text>
+
+  <!-- ============ OBJECT · un semáforo ============ -->
+  <!-- housing -->
+  <rect x="134" y="118" width="72" height="190" rx="16" fill="#3a352f"/>
+  <!-- three lamps: all lit = three aspects at once -->
+  <circle cx="170" cy="150" r="18" fill="#b25a24"/>
+  <circle cx="170" cy="212" r="18" fill="#b25a24"/>
+  <circle cx="170" cy="274" r="18" fill="#b25a24"/>
+  <!-- pole -->
+  <rect x="167" y="308" width="6" height="46" rx="2" fill="#3a352f"/>
+  <rect x="150" y="352" width="40" height="5" rx="2.5" fill="#3a352f"/>
+  <text x="170" y="374" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8a8178">el semáforo</text>
+
+  <!-- ============ THREE READINGS ============ -->
+  <!-- reading lines from the one object out to three aspects -->
+  <path d="M208,150 L388,150" fill="none" stroke="#c98a5c" stroke-width="1.4" marker-end="url(#cm-amber)"/>
+  <path d="M208,212 L388,212" fill="none" stroke="#c98a5c" stroke-width="1.4" marker-end="url(#cm-amber)"/>
+  <path d="M208,274 L388,274" fill="none" stroke="#c98a5c" stroke-width="1.4" marker-end="url(#cm-amber)"/>
+
+  <!-- aspect 1 · núcleo computable -->
+  <text x="398" y="146" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" font-weight="700" fill="#3a352f" letter-spacing="0.03em">NÚCLEO COMPUTABLE</text>
+  <text x="398" y="165" font-family="Georgia, 'Times New Roman', serif" font-size="10.5" font-style="italic" fill="#6b6459">el timing óptimo del ciclo</text>
+  <text x="676" y="154" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#a99f92">→</text>
+  <rect x="692" y="137" width="78" height="26" rx="8" fill="#b25a24"/>
+  <text x="731" y="154" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#fdf7f0">computa</text>
+
+  <!-- aspect 2 · métrica disputable -->
+  <text x="398" y="208" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" font-weight="700" fill="#3a352f" letter-spacing="0.03em">MÉTRICA DISPUTABLE</text>
+  <text x="398" y="227" font-family="Georgia, 'Times New Roman', serif" font-size="10.5" font-style="italic" fill="#6b6459">a quién prioriza: peatón · auto · bus</text>
+  <text x="676" y="216" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#a99f92">→</text>
+  <rect x="692" y="199" width="78" height="26" rx="8" fill="#b25a24"/>
+  <text x="731" y="216" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#fdf7f0">delibera</text>
+
+  <!-- aspect 3 · efectos emergentes -->
+  <text x="398" y="270" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" font-weight="700" fill="#3a352f" letter-spacing="0.03em">EFECTOS EMERGENTES</text>
+  <text x="398" y="289" font-family="Georgia, 'Times New Roman', serif" font-size="10.5" font-style="italic" fill="#6b6459">cómo la gente se apropia del cruce</text>
+  <text x="676" y="278" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#a99f92">→</text>
+  <rect x="692" y="261" width="78" height="26" rx="8" fill="#b25a24"/>
+  <text x="731" y="278" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#fdf7f0">cultiva</text>
+
+  <!-- bottom caption -->
+  <line x1="40" y1="386" x2="780" y2="386" stroke="#ece3d5" stroke-width="1"/>
+  <text x="410" y="409" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11.5" fill="#514b43">un mismo asunto tiene a la vez núcleo computable, métrica disputable y efectos emergentes</text>
+</svg>

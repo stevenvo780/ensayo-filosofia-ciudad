@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" width="820" height="420" role="img" aria-label="Banco Epistémico Urbano: fragmenta versus escala">
+  <defs>
+    <marker id="be-grey" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a99f92"/>
+    </marker>
+    <marker id="be-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b25a24"/>
+    </marker>
+  </defs>
+
+  <!-- card -->
+  <rect x="1.5" y="1.5" width="817" height="417" rx="18" fill="#faf7f2" stroke="#e7ddcf" stroke-width="1.5"/>
+  <line x1="410" y1="44" x2="410" y2="365" stroke="#e6dccc" stroke-width="1" stroke-dasharray="2 5"/>
+
+  <!-- ============ LEFT · ESCALA (RECHAZADO) ============ -->
+  <text x="205" y="42" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="700" fill="#8a8178" letter-spacing="0.04em">ESCALA</text>
+  <text x="205" y="60" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8a8178">un modelo único</text>
+
+  <!-- single opaque box with lock symbol (struck through / rejected) -->
+  <rect x="130" y="105" width="150" height="180" rx="9" fill="#3a352f" opacity="0.23" stroke="#ded5c7" stroke-width="1.5"/>
+  <text x="205" y="160" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#8f8578">modelo</text>
+  <text x="205" y="177" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" fill="#8f8578">negro</text>
+  <!-- lock icon (simple padlock) -->
+  <circle cx="205" cy="218" r="7" fill="none" stroke="#a99f92" stroke-width="1.4"/>
+  <rect x="199" y="225" width="12" height="14" rx="2" fill="none" stroke="#a99f92" stroke-width="1.4"/>
+  <line x1="202" y1="225" x2="202" y2="232" stroke="#a99f92" stroke-width="1.2"/>
+  <!-- strike-through: diagonal rejection mark across the black box -->
+  <line x1="138" y1="277" x2="272" y2="113" stroke="#a99f92" stroke-width="2.6" stroke-linecap="round"/>
+
+  <text x="205" y="330" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" font-style="italic" fill="#8a8178">imposible auditar</text>
+  <text x="205" y="348" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8a8178">opacidad centralizada</text>
+
+  <!-- ============ RIGHT · FRAGMENTA (PROPUESTA) ============ -->
+  <text x="615" y="42" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="700" fill="#b25a24" letter-spacing="0.04em">FRAGMENTA</text>
+  <text x="615" y="60" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8a8178">banco público de piezas</text>
+
+  <!-- three small pieces (modelos, datos, contra-métricas) -->
+  <!-- Piece 1: modelos -->
+  <rect x="540" y="110" width="65" height="50" rx="6" fill="#b25a24" opacity="0.9"/>
+  <text x="572.5" y="132" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#fdf7f0">modelos</text>
+  <text x="572.5" y="147" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="7.5" fill="#fdf7f0">abiertos</text>
+
+  <!-- Piece 2: datos -->
+  <rect x="635" y="110" width="65" height="50" rx="6" fill="#b25a24" opacity="0.9"/>
+  <text x="667.5" y="132" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#fdf7f0">datos</text>
+  <text x="667.5" y="147" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="7.5" fill="#fdf7f0">públicos</text>
+
+  <!-- Piece 3: contra-métricas -->
+  <rect x="730" y="110" width="65" height="50" rx="6" fill="#b25a24" opacity="0.9"/>
+  <text x="762.5" y="132" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="8" font-weight="700" fill="#fdf7f0">contra-</text>
+  <text x="762.5" y="145" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="8" font-weight="700" fill="#fdf7f0">métricas</text>
+
+  <!-- Juntas/veedurías: circle nodes below, compiting -->
+  <circle cx="572.5" cy="200" r="5.5" fill="#b25a24"/>
+  <circle cx="667.5" cy="200" r="5.5" fill="#b25a24"/>
+  <circle cx="762.5" cy="200" r="5.5" fill="#b25a24"/>
+
+  <g font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9" fill="#3a352f">
+    <text x="572.5" y="225" text-anchor="middle">junta</text>
+    <text x="572.5" y="237" text-anchor="middle">de datos</text>
+
+    <text x="667.5" y="225" text-anchor="middle">junta</text>
+    <text x="667.5" y="237" text-anchor="middle">técnica</text>
+
+    <text x="762.5" y="225" text-anchor="middle">junta</text>
+    <text x="762.5" y="237" text-anchor="middle">deliberativa</text>
+  </g>
+
+  <!-- arrows from pieces down to juntas -->
+  <path d="M572.5,160 L572.5,194" fill="none" stroke="#a99f92" stroke-width="1.3" marker-end="url(#be-grey)"/>
+  <path d="M667.5,160 L667.5,194" fill="none" stroke="#a99f92" stroke-width="1.3" marker-end="url(#be-grey)"/>
+  <path d="M762.5,160 L762.5,194" fill="none" stroke="#a99f92" stroke-width="1.3" marker-end="url(#be-grey)"/>
+
+  <!-- re-entry loop (reingreso) from juntas back up -->
+  <path d="M540,210 C490,180 490,90 540,75" fill="none" stroke="#b25a24" stroke-width="1.6" marker-end="url(#be-amber)"/>
+  <text x="470" y="145" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9" fill="#b25a24">reingreso</text>
+
+  <!-- label: "computan su lectura" -->
+  <text x="667.5" y="280" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="10" font-style="italic" fill="#6b6459">computan su lectura y reingresan</text>
+
+  <!-- bottom caption -->
+  <line x1="40" y1="372" x2="780" y2="372" stroke="#ece3d5" stroke-width="1"/>
+  <text x="410" y="400" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11.5" fill="#514b43">Órgano epistémico de la ciudad, no su cerebro.</text>
+</svg>

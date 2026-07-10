@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 380" width="820" height="380" role="img" aria-label="Mapa de los tres ejes: Ontológico, Poder y Técnica">
+  <defs>
+    <marker id="te-grey" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a99f92"/>
+    </marker>
+    <marker id="te-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b25a24"/>
+    </marker>
+  </defs>
+
+  <!-- card -->
+  <rect x="1.5" y="1.5" width="817" height="377" rx="18" fill="#faf7f2" stroke="#e7ddcf" stroke-width="1.5"/>
+
+  <!-- vertical dividers -->
+  <line x1="273.33" y1="150" x2="273.33" y2="318" stroke="#e6dccc" stroke-width="1" stroke-dasharray="2 5"/>
+  <line x1="546.67" y1="150" x2="546.67" y2="318" stroke="#e6dccc" stroke-width="1" stroke-dasharray="2 5"/>
+
+  <!-- ============ COLUMN 1 · ONTOLÓGICO (center x=137) ============ -->
+  <circle cx="137" cy="44" r="13" fill="#b25a24"/>
+  <text x="137" y="50" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="17" font-weight="700" fill="#fdf7f0">1</text>
+  <text x="137" y="92" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="700" fill="#b25a24" letter-spacing="0.04em">ONTOLÓGICO</text>
+  <text x="137" y="113" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8a8178">¿de qué está hecha</text>
+  <text x="137" y="126" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8a8178">la ciudad?</text>
+
+  <!-- guide line -->
+  <line x1="137" y1="150" x2="137" y2="316" stroke="#c98a5c" stroke-width="1.2" opacity="0.5"/>
+
+  <!-- sub-elements -->
+  <text x="137" y="184" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" fill="#3a352f" font-weight="600">tejido</text>
+  <circle cx="137" cy="200" r="4.5" fill="#b25a24"/>
+
+  <text x="137" y="240" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" fill="#3a352f" font-weight="600">institución</text>
+  <circle cx="137" cy="256" r="4.5" fill="#b25a24"/>
+
+  <text x="137" y="296" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" fill="#3a352f" font-weight="600">singularidad</text>
+  <circle cx="137" cy="312" r="4.5" fill="#b25a24"/>
+
+  <!-- ============ COLUMN 2 · PODER (center x=410) ============ -->
+  <circle cx="410" cy="44" r="13" fill="#b25a24"/>
+  <text x="410" y="50" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="17" font-weight="700" fill="#fdf7f0">2</text>
+  <text x="410" y="92" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="700" fill="#b25a24" letter-spacing="0.04em">PODER</text>
+  <text x="410" y="113" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8a8178">¿quién mira,</text>
+  <text x="410" y="126" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8a8178">quién mide, quién decide?</text>
+
+  <!-- guide line -->
+  <line x1="410" y1="150" x2="410" y2="316" stroke="#c98a5c" stroke-width="1.2" opacity="0.5"/>
+
+  <!-- sub-elements -->
+  <text x="410" y="184" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" fill="#3a352f" font-weight="600">la métrica</text>
+  <circle cx="410" cy="200" r="4.5" fill="#b25a24"/>
+
+  <text x="410" y="243" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9" fill="#8a8178" font-style="italic">decide el centro</text>
+  <circle cx="410" cy="256" r="4.5" fill="#b25a24"/>
+
+  <text x="410" y="296" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" fill="#3a352f" font-weight="600">fragmentación</text>
+  <circle cx="410" cy="312" r="4.5" fill="#b25a24"/>
+
+  <!-- ============ COLUMN 3 · TÉCNICA (center x=683) ============ -->
+  <circle cx="683" cy="44" r="13" fill="#b25a24"/>
+  <text x="683" y="50" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="17" font-weight="700" fill="#fdf7f0">3</text>
+  <text x="683" y="92" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="700" fill="#b25a24" letter-spacing="0.04em">TÉCNICA</text>
+  <text x="683" y="113" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8a8178">¿superar el</text>
+  <text x="683" y="126" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8a8178">funcionalismo sin repetirlo?</text>
+
+  <!-- guide line -->
+  <line x1="683" y1="150" x2="683" y2="316" stroke="#c98a5c" stroke-width="1.2" opacity="0.5"/>
+
+  <!-- sub-elements -->
+  <text x="683" y="184" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" fill="#3a352f" font-weight="600">computar</text>
+  <circle cx="683" cy="200" r="4.5" fill="#b25a24"/>
+
+  <text x="683" y="243" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="9" fill="#8a8178" font-style="italic">sin subsumir</text>
+  <circle cx="683" cy="256" r="4.5" fill="#b25a24"/>
+
+  <text x="683" y="296" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" fill="#3a352f" font-weight="600">agencia inmanente</text>
+  <circle cx="683" cy="312" r="4.5" fill="#b25a24"/>
+
+  <!-- bottom caption line separator -->
+  <line x1="40" y1="352" x2="780" y2="352" stroke="#ece3d5" stroke-width="1"/>
+
+  <!-- bottom caption -->
+  <text x="410" y="375" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11.5" fill="#514b43">La ciudad no es objeto dado sino <tspan font-style="italic">composición de distinciones</tspan> en disputa.</text>
+</svg>
