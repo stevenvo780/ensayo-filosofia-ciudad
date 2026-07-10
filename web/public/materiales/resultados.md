@@ -6,6 +6,10 @@
 > sentido estricto de Maturana–Varela (clausura operacional + autoproducción de los
 > componentes): eso es una tesis filosófica, no un exponente. En el ensayo se citan como
 > *evidencia consistente con* la lectura autopoiética, nunca como su demostración.
+> Estas demostraciones son evidencia de patrones de auto-organización; el matiz filosóficamente
+> decisivo —si esa autoproducción queda **abierta** (los componentes reingresan y disputan la
+> distinción que los genera) o se **cierra** sobre una sola métrica que subsume el resto— es una
+> lectura normativa del ensayo, no algo que el cómputo decida por sí solo.
 >
 > **Versión única y canónica.** Este archivo reemplaza cualquier versión previa («chica»/«mega»):
 > hay **un solo** conjunto de resultados. Hardware: 32 núcleos, 125 GB RAM. Ejecución local
@@ -23,7 +27,7 @@
 | D7 | Umbral de intervención anti-segregación (Schelling con palanca) | vivienda **indiferente NO** rompe el sorting (0.87→0.95); vivienda **anclada/integrada** sí, umbral **~55 %** para bajar de 0.65 | Schelling 300² (tol 0.5), 2 palancas | sintética (compute-bound) | `figs/D7_mega.png` |
 | D8 | Escala CIUDAD (radio 4 km): D5+D6 sobre red real mayor | **22.863 nodos**; desnivel **962 m**; prominencia **7.6×**; Jaccard métrica-decide-centro **0.08**; centro del cuerpo a **710 m** del flujo | **red REAL de Medellín (4 km) + SRTM** | dato real | `figs/D8_mega.png` |
 | D9 | Robustez / significancia de D5 vs grafos nulos | prominencia real **9.76** vs nulos 2.73 → **z = 188** (estructura real, no artefacto); divergencia de métricas ≈ nulos (propiedad general) | red REAL D5 + 60 nulos degree-preserving | dato real | — |
-| D10 | Juego de congestión (Wardrop/Braess) sobre la red vial real | **PoA = 1.02**; una **arista-Braess robusta** (cerrarla mejora el tiempo agregado **+1.38 %**; el resto 0.1–0.26 %, piso de ruido de Frank-Wolfe, gap 0.009) | **red REAL de Medellín (4 km): 22.863 nodos, 33.988 aristas**; demanda O-D **sintética** (300 zonas); BPR α=0.15 β=4 | sintético-sobre-red-real (demanda O-D sintética) | `figs/D10_mega.png` |
+| D10 | Juego de congestión (Wardrop/Braess) sobre la red vial real | **PoA = 1.03**; una **arista-Braess robusta** (cerrarla mejora el tiempo agregado **+1.37 %**; el resto 0.1–0.26 %, piso de ruido de Frank-Wolfe, gap 0.009) | **red REAL de Medellín (4 km): 22.863 nodos, 33.988 aristas**; demanda O-D **sintética** (300 zonas); BPR α=0.15 β=4 | sintético-sobre-red-real (demanda O-D sintética) | `figs/D10_mega.png` |
 | D11 | Juego de localización de Hotelling (comercio informal) | el comercio informal **se aglomera**: aglomeración **2.3×** vs azar y **2.6×** vs el óptimo social (N=40); robusto en el barrido N=10–60 (2.1–3.9× vs óptimo); cobertura 41–63 % peor | **red REAL de Medellín: 7.598 nodos**; demanda ∝ densidad local | dato real (de red) | `figs/D11_mega.png` |
 | D12 | Difusión / esparcimiento sobre el grafo real | footfall = campo **difuso** (top 1 % concentra 2.4 %; Spearman vs grado 0.47; vs elevación −0.04); isócronas de 15 min encogen **16 %** en el centro plano y **24 %** en la ladera | **red REAL de Medellín (22.863 nodos) + SRTM 30 m** | dato real (de red) | `figs/D12_mega.png` |
 | D13 | Teoría de la decisión (minimax-regret) sobre la red real | las 4 centralidades rankean nodos casi disjuntos (**Jaccard medio 0.03**); el minimax-regret formal elige eigenvector por **patología** (0.965 en 200 nodos) → sin esa métrica, top_betweenness robusto (precio 0.12) y el portafolio mixto casi empata (0.13): **margen irreducible** | **red REAL de Medellín (22.863 nodos)**; 4 centralidades | dato real (de red) | `figs/D13_mega.png` |
@@ -154,10 +158,10 @@ Sobre la red peatonal real de Medellín de radio 4 km (**22.863 nodos, 33.988 ar
 D8) usada como topología vial, se resuelve el **equilibrio de usuario** (cada viaje minimiza su
 propio tiempo, Wardrop) y el **óptimo social** por **Frank-Wolfe**, con costo **BPR**
 `t(f) = t0·(1 + α·(f/cap)^β)`, α = 0.15, β = 4 (valores estándar FHWA) y demanda O-D **sintética**
-uniforme entre **300 zonas**. El **precio de la anarquía es PoA = 1.02**: el egoísmo de ruta cuesta
-sólo ~2 % de tiempo agregado sobre el óptimo. El escaneo de la **paradoja de Braess** sobre las 30
+uniforme entre **300 zonas**. El **precio de la anarquía es PoA = 1.03**: el egoísmo de ruta cuesta
+sólo ~3 % de tiempo agregado sobre el óptimo. El escaneo de la **paradoja de Braess** sobre las 30
 aristas más cargadas encuentra **una arista-Braess robusta**: cerrarla mejora el tiempo total
-agregado **+1.38 %** (arista en ~[6.2688, −75.5430]); las demás dan 0.1–0.26 %, que es el **piso de
+agregado **+1.37 %** (arista en ~[6.2688, −75.5430]); las demás dan 0.1–0.26 %, que es el **piso de
 ruido** de Frank-Wolfe (gap relativo 0.009). HONESTIDAD: la demanda es sintética, la red peatonal se
 usa como topología vial y la capacidad es constante, de modo que las magnitudes son modestas; lo
 **robusto** es el hallazgo cualitativo —existe efecto Braess: cerrar una calle puede mejorar el flujo

@@ -50,3 +50,14 @@ modal** (que cada afirmación use el verbo que le corresponde: demuestra / ilust
 andamiaje que hace el trabajo auditable: compuertas `make verify` y `make wordcount`, el espejo
 público [`/materiales`](../web/src/pages/MaterialesPage.tsx), la
 [`METODOLOGIA.md`](METODOLOGIA.md) y esta bitácora.
+
+**8. Giro autopoiético y cuatro experimentos predictivos.** El lente vira de «asignación soberana» a
+**autopoiesis** (abierta/cerrada, con agencia **inmanente** por acoplamiento estructural): la ciudad
+se autoproduce y el peligro es que esa autoproducción **se cierre**; funcionalismo y *smart city*
+son la misma clausura. Se cierra el hueco predictivo con cuatro demostraciones nuevas sobre la red
+real —**D10** congestión/Braess, **D11** localización de Hotelling, **D12** difusión con pendiente,
+**D13** minimax-regret— y el conteo pasa de **nueve a trece** (D1–D13). La propagación del lente a
+todo el repo se hizo con un **workflow multi-modelo** (seis agentes en paralelo + guardián
+adversarial) y correcciones del orquestador re-verificadas contra
+[`ciencia/RESULTADOS.md`](../ciencia/RESULTADOS.md). Detalle en
+[`iteraciones/8-autopoiesis.md`](iteraciones/8-autopoiesis.md).

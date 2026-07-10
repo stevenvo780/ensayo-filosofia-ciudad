@@ -1,4 +1,4 @@
-# Evidencia computacional (D1–D9) — Python 3.12
+# Evidencia computacional (D1–D13) — Python 3.12
 # Instalar:  python -m venv .venv && .venv/bin/pip install -r requirements.txt
 # Correr:    .venv/bin/python ciencia/mega/D5_mega.py   (etc.)
 numpy==2.5.1

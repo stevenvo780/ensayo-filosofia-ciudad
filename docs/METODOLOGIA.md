@@ -55,10 +55,10 @@ Cada iteración quedó en **git** y en los documentos [`CRITICA.md`](../CRITICA.
    [`/materiales`](../web/src/pages/MaterialesPage.tsx) se **generan** desde ahí. Nada se edita en
    dos lugares: no hay «versión web» y «versión papel» que puedan divergir.
 
-2. **Evidencia computacional local y reproducible.** Nueve demostraciones (D1–D9) en
+2. **Evidencia computacional local y reproducible.** Trece demostraciones (D1–D13) en
    [`ciencia/mega/`](../ciencia/mega/), con **semilla fija `42`** y ejecución local (32 núcleos).
    Donde hay datos reales —OpenStreetMap, SRTM, GeoNames— las respuestas crudas quedan **cacheadas**
-   (`cache/`, [`ciencia/data/`](../ciencia/data/)), lo que **fija las cifras**: D5, D6, D8 y D9
+   (`cache/`, [`ciencia/data/`](../ciencia/data/)), lo que **fija las cifras**: D5, D6, D8, D9, D11, D12 y D13
    reproducen la misma red y los mismos números sin volver a golpear ninguna API.
 
 3. **Compuertas duras.** Dos verificaciones automáticas custodian el texto:

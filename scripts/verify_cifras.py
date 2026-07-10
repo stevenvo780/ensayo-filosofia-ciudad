@@ -196,7 +196,7 @@ CANON = [
       [r"k\s*=\s*(\d+)"]),
 
     # ---- D10–D13 · nuevos experimentos (congestión, Hotelling, difusión, decisión) ----
-    D("poa", "precio de la anarquía (PoA)", "D10", {1.02}, 0.0,
+    D("poa", "precio de la anarquía (PoA)", "D10", {1.03}, 0.0,
       [r"anarquía[^0-9\n]{0,15}(" + NUM + r")"]),
     D("zonas", "zonas O-D de la demanda sintética", "D10", {300}, 0.0,
       [r"(\d+)\s+zonas"]),
@@ -207,7 +207,7 @@ CANON = [
 
     # ---- Experimento T1–T6 (solo en la tesis) ----
     D("porcentaje", "porcentajes empíricos e institucionales", "EXP/POL/D10/D11/D12",
-      {1, 1.38, 2.4, 5, 16, 20, 24, 53, 55, 70, 75, 83, 90, 92, 93, 95, 100}, 0.0,
+      {1, 1.37, 2.4, 5, 16, 20, 24, 53, 55, 70, 75, 83, 90, 92, 93, 95, 100}, 0.0,
       [r"(" + NUM + r")\s*%"]),
     D("aciertos_10", "aciertos sobre 10 celdas (T1–T6)", "EXP", {7, 9}, 0.0,
       [r"\b([0-9])/10\b"]),

@@ -1,6 +1,6 @@
 # Evidencia computacional — guía de reproducción
 
-Nueve demostraciones (D1–D9) que sostienen el ensayo. Ejecución **local**, reproducible, semilla fija
+Trece demostraciones (D1–D13) que sostienen el ensayo. Ejecución **local**, reproducible, semilla fija
 `42`. El resumen canónico con los matices honestos de cada resultado está en
 [`RESULTADOS.md`](RESULTADOS.md). Aquí va el detalle operativo: qué corre cada script, qué datos usa y
 qué produce.
@@ -30,6 +30,10 @@ Cada script imprime un JSON entre `===RESULT===` y `===END===` y escribe su figu
 | `mega/D7_intervencion.py` | — (Schelling con palanca) | `figs/D7_mega.png` | sintético |
 | `mega/D8_ciudad.py` | red real radio 4 km + SRTM → `data/d8_elev_cache.json` | `figs/D8_mega.png` | **real** |
 | `mega/D9_robustez.py` | red D5 + 60 grafos nulos | (JSON; sin figura) | **real** |
+| `mega/D10_congestion.py` | red real radio 4 km + demanda O-D sintética | `figs/D10_mega.png` | sintético-sobre-red-real |
+| `mega/D11_hotelling.py` | red real del centro de Medellín (la de D5) | `figs/D11_mega.png` | **real** |
+| `mega/D12_difusion.py` | red real radio 4 km + SRTM 30 m | `figs/D12_mega.png` | **real** |
+| `mega/D13_decision.py` | red real radio 4 km + 4 centralidades | `figs/D13_mega.png` | **real** |
 
 ## Datos (`data/`) — procedencia
 
@@ -42,15 +46,16 @@ Cada script imprime un JSON entre `===RESULT===` y `===END===` y escribe su figu
 ## Cachés de red (`../cache/`)
 
 `osmnx` guarda ahí las respuestas crudas de la API Overpass de OpenStreetMap. Conservarlas **fija la
-red exacta** de calles usada en D5/D6/D8/D9, de modo que los resultados reproducen idénticamente
-aunque OSM cambie con el tiempo. Si se borran, los scripts vuelven a descargar la red actual (que
-puede diferir levemente).
+red exacta** de calles usada en D5/D6/D8/D9/D10/D11/D12/D13, de modo que los resultados reproducen
+idénticamente aunque OSM cambie con el tiempo. Si se borran, los scripts vuelven a descargar la red
+actual (que puede diferir levemente).
 
 ## Notas de honestidad (resumen)
 
 - **D3, D4, D7** son sintéticos: ilustran mecanismos (fractalidad, emergencia segregante, umbrales de
   intervención), **no** son mediciones de Medellín.
 - **D1** es una regularidad del *sistema* de ciudades (ensemble), no de una ciudad singular.
-- **D5, D6, D8, D9** son datos **reales** de Medellín (OSM + SRTM).
-- Todo se cita como *evidencia consistente con* la lectura autopoiética, nunca como prueba literal.
-  El detalle completo está en [`RESULTADOS.md`](RESULTADOS.md).
+- **D10** corre sobre la red real de Medellín, pero con demanda O-D **sintética**.
+- **D5, D6, D8, D9, D11, D12, D13** son datos **reales** de Medellín (OSM + SRTM).
+- Todo se cita como *evidencia consistente con* el lente autopoiético —abierto/cerrado— que organiza
+  el proyecto, nunca como prueba literal. El detalle completo está en [`RESULTADOS.md`](RESULTADOS.md).

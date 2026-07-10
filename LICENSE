@@ -6,7 +6,7 @@ Este repositorio contiene dos tipos de obra con licencias distintas:
 ────────────────────────────────────────────────────────────────────
 1) CÓDIGO Y DATOS DERIVADOS — Licencia MIT
 ────────────────────────────────────────────────────────────────────
-Aplica a: los scripts de `ciencia/` (D1–D9), el sitio web de `web/`, los
+Aplica a: los scripts de `ciencia/` (D1–D13), el sitio web de `web/`, los
 scripts de build, y las figuras y cachés de datos generados por ellos
 (`ciencia/figs/`, `ciencia/data/`, `cache/`).
 

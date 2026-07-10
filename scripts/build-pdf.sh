@@ -52,7 +52,7 @@ cat > "$AFTER" <<'HTML'
   <p class="colo-title">Recursos y reproducibilidad</p>
   <p><strong>Versión interactiva</strong>, con animaciones que explican las demostraciones (la métrica que decide el centro, Schelling en vivo, la tríada computa/cultiva/delibera): <a href="https://autopoesis.stevenvallejo.com">autopoesis.stevenvallejo.com</a></p>
   <p><strong>Código, datos reales de Medellín (OpenStreetMap, SRTM, GeoNames) y tesis de respaldo</strong> — todo abierto y reproducible: <a href="https://github.com/stevenvo780/ensayo-filosofia-ciudad">github.com/stevenvo780/ensayo-filosofia-ciudad</a></p>
-  <p><strong>Tesis de respaldo</strong> (aparato empírico completo, nueve demostraciones): <a href="https://autopoesis.stevenvallejo.com/tesis">autopoesis.stevenvallejo.com/tesis</a> &nbsp;·&nbsp; <strong>Presentación</strong>: <a href="https://autopoesis.stevenvallejo.com/presentacion">autopoesis.stevenvallejo.com/presentacion</a></p>
+  <p><strong>Tesis de respaldo</strong> (aparato empírico completo, trece demostraciones): <a href="https://autopoesis.stevenvallejo.com/tesis">autopoesis.stevenvallejo.com/tesis</a> &nbsp;·&nbsp; <strong>Presentación</strong>: <a href="https://autopoesis.stevenvallejo.com/presentacion">autopoesis.stevenvallejo.com/presentacion</a></p>
   <p style="margin-top:6pt;color:#777;">Steven Vallejo Ortiz · Filosofía de la Ciudad · Universidad de Antioquia · 2026</p>
 </div>
 HTML

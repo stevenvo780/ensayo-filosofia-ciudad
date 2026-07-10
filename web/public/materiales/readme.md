@@ -9,7 +9,7 @@ presentación con animaciones explicativas interactivas. (Espejo: `filosofia-de-
 
 Este repositorio se publica como **evidencia abierta y reproducible**: todo el aparato empírico que
 sostiene el ensayo —código, datos reales y figuras— está aquí, sin nada oculto. Cualquiera puede
-re-ejecutar las nueve demostraciones y obtener las mismas cifras.
+re-ejecutar las trece demostraciones y obtener las mismas cifras.
 
 ---
 
@@ -22,6 +22,11 @@ resultados) y **delibera** lo relevante (toda métrica pública es un acto polí
 funcionalismo fracasó por *computar lo emergente*; la *smart city* fracasa por *computar lo
 relevante*: el mismo error de asignación con el signo invertido.
 
+Ese diagnóstico se lee bajo un lente **autopoiético**: la ciudad se autoproduce en la medida en que
+sus componentes reingresan y disputan las distinciones del sistema —autopoiesis **abierta**—; el
+funcionalismo y la *smart city* subsumen todo bajo una distinción fija y clausuran esa reentrada
+—autopoiesis **cerrada**—. Es el lente que organiza este repositorio, no un teorema demostrado.
+
 ---
 
 ## Los dos textos
@@ -29,13 +34,13 @@ relevante*: el mismo error de asignación con el signo invertido.
 | Texto | Archivo | Qué es |
 |---|---|---|
 | **Ensayo** (entregable) | [`ensayo/00_ensayo.md`](ensayo/00_ensayo.md) | «La ciudad bien asignada», ~2.400 palabras (dentro del rango 2000–2500). Cartografía crítica en tres ejes: ontológico, poder, técnica. Autosuficiente. |
-| **Tesis de respaldo** | [`tesis/00_tesis.md`](tesis/00_tesis.md) | Documento extenso que fundamenta el ensayo: el aparato empírico completo (figuras D1–D9), el Banco Epistémico Urbano y las críticas técnicas. El ensayo se auto-referencia a ella. |
+| **Tesis de respaldo** | [`tesis/00_tesis.md`](tesis/00_tesis.md) | Documento extenso que fundamenta el ensayo: el aparato empírico completo (figuras D1–D13), el Banco Epistémico Urbano y las críticas técnicas. El ensayo se auto-referencia a ella. |
 
 ---
 
-## La evidencia computacional (D1–D9)
+## La evidencia computacional (D1–D13)
 
-Nueve demostraciones, ejecutadas **localmente** (32 núcleos, semilla fija `42`). El resumen canónico
+Trece demostraciones, ejecutadas **localmente** (32 núcleos, semilla fija `42`). El resumen canónico
 —con los guardarraíles epistémicos honestos de cada una— está en
 [`ciencia/RESULTADOS.md`](ciencia/RESULTADOS.md). Scripts en `ciencia/mega/`, figuras en `ciencia/figs/`.
 
@@ -50,9 +55,14 @@ Nueve demostraciones, ejecutadas **localmente** (32 núcleos, semilla fija `42`)
 | **D7** | Umbral de intervención anti-segregación | diluir NO sirve; anclar sí, umbral ~55 % | Schelling con palanca de política | `D7_intervencion.py` |
 | **D8** | Escala CIUDAD (radio 4 km) | desnivel 962 m; centro del cuerpo a 710 m del flujo; prominencia 7.6× | red real de 22.863 nodos + SRTM | `D8_ciudad.py` |
 | **D9** | Robustez / significancia (null models) | prominencia real vs nulos → z ≈ 188 (estructura real) | red D5 + 60 grafos degree-preserving | `D9_robustez.py` |
+| **D10** | Juego de congestión (Wardrop/Braess) | PoA = 1.03; una arista-Braess robusta mejora +1.37 % al cerrarla | red real de 22.863 nodos + demanda O-D sintética | `D10_congestion.py` |
+| **D11** | Juego de localización de Hotelling | comercio informal se aglomera 2.6× vs el óptimo social | red real de Medellín (7.598 nodos) | `D11_hotelling.py` |
+| **D12** | Difusión / esparcimiento | footfall difuso; pendiente encoge alcance de 15 min 24 % en ladera vs 16 % en el centro | red real de 22.863 nodos + SRTM | `D12_difusion.py` |
+| **D13** | Minimax-regret sobre 4 centralidades | rankings casi disjuntos (Jaccard medio 0.03); no hay portafolio robusto neutral | red real de 22.863 nodos | `D13_decision.py` |
 
-**Honestidad (importante):** D3 y D4 son sintéticas (ilustran mecanismos, no son Medellín). D1 es una
-regularidad del *sistema* de ciudades, no de una ciudad singular. D5–D9 son datos **reales** de
+**Honestidad (importante):** D3, D4 y D7 son sintéticas (ilustran mecanismos, no son Medellín). D1 es
+una regularidad del *sistema* de ciudades, no de una ciudad singular. D10 corre sobre la red real de
+Medellín, pero con demanda O-D **sintética**. D5, D6, D8, D9, D11, D12 y D13 son datos **reales** de
 Medellín. Estos resultados se citan como *evidencia consistente con* una lectura autopoiética de la
 ciudad, **nunca** como su prueba literal. Cada matiz está escrito en `ciencia/RESULTADOS.md`.
 
@@ -136,9 +146,9 @@ Vercel (`vercel build --prod && vercel deploy --prebuilt --prod`).
 ensayo/00_ensayo.md        El entregable: «La ciudad bien asignada»
 tesis/00_tesis.md          Tesis de respaldo (aparato empírico + Banco Epistémico Urbano)
 ciencia/
-  RESULTADOS.md            Resultados canónicos D1–D9 con guardarraíles honestos
-  mega/D*.py               Los 10 scripts de las demostraciones (evidencia ejecutable)
-  figs/D1–D8_mega.png      Figuras generadas por los scripts
+  RESULTADOS.md            Resultados canónicos D1–D13 con guardarraíles honestos
+  mega/D*.py               Los 14 scripts de las demostraciones (evidencia ejecutable)
+  figs/D1–D13_mega.png     Figuras generadas por los scripts (excepto D9, sin figura)
   data/                    Datos reales: GeoNames + cachés de OSM y SRTM
   README.md                Guía de reproducción de la evidencia
 cache/                     Respuestas crudas de OpenStreetMap (fija la red usada)

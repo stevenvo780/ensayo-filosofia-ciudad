@@ -59,7 +59,7 @@ const SECTIONS: Section[] = [
         to: "/tesis",
         icon: <BookOpen size={15} aria-hidden="true" />,
         title: "Tesis de respaldo",
-        desc: "El documento extenso: nueve demostraciones, el experimento T1–T6 y el Banco Epistémico Urbano.",
+        desc: "El documento extenso: trece demostraciones, el experimento T1–T6 y el Banco Epistémico Urbano.",
       },
       {
         to: "/presentacion",
@@ -164,12 +164,12 @@ const SECTIONS: Section[] = [
     id: "evidencia",
     kicker: "04",
     title: "Evidencia computacional",
-    lead: "Los datos y el código que sostienen el ensayo: nueve demostraciones reproducibles con semilla fija, sobre datos reales de Medellín y del mundo.",
+    lead: "Los datos y el código que sostienen el ensayo: trece demostraciones reproducibles con semilla fija, sobre datos reales de Medellín (y del mundo, cuando aplica).",
     docs: [
       {
         slug: "resultados",
         title: "Resultados computacionales",
-        desc: "El resumen canónico de las nueve demostraciones (D1–D9) con sus matices honestos.",
+        desc: "El resumen canónico de las trece demostraciones (D1–D13) con sus matices honestos.",
       },
       {
         slug: "ciencia-readme",

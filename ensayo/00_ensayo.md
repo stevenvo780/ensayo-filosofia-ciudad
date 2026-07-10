@@ -3,7 +3,7 @@
 **Steven Vallejo Ortiz · Filosofía de la Ciudad · 2026-1 · Prof. Carolina Álvarez-Valencia · Universidad de Antioquia · 10 de julio de 2026**
 
 > *Ensayo de cartografía crítica (2.000–2.500 palabras). Se acompaña de una tesis de respaldo con
-> el aparato completo —nueve demostraciones computacionales reproducibles y un experimento propio
+> el aparato completo —trece demostraciones computacionales reproducibles y un experimento propio
 > (Vallejo, 2026)—; el argumento de este ensayo es autónomo respecto de ella.*
 
 ---
@@ -82,4 +82,4 @@ A las seis de la tarde, en Junín, el ventero mueve su carreta dos metros. En la
 - Scott, J. C. (1998). *Seeing like a state*. Yale University Press.
 - Searle, J. (1997). *La construcción de la realidad social* (A. Domènech, Trad.). Paidós. (Obra original de 1995).
 - Simmel, G. (1986). Las grandes urbes y la vida del espíritu. En *El individuo y la libertad* (S. Masó, Trad.). Península. (Obra original de 1903).
-- Vallejo, S. (2026). *La herramienta sobredimensionada y la aplicación faltante* [tesis de respaldo del presente ensayo: nueve demostraciones computacionales reproducibles, experimento T1–T6 y propuesta del Banco Epistémico Urbano]. Repositorio del curso, `tesis/00_tesis.md`.
+- Vallejo, S. (2026). *La herramienta sobredimensionada y la aplicación faltante* [tesis de respaldo del presente ensayo: trece demostraciones computacionales reproducibles, experimento T1–T6 y propuesta del Banco Epistémico Urbano]. Repositorio del curso, `tesis/00_tesis.md`.

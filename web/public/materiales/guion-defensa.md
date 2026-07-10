@@ -14,11 +14,18 @@ dos metros; la cámara lo lee como «obstrucción del flujo»; en diciembre el c
 gente y ningún tablero sabe qué se celebra. *Frase ancla:* «desde esta esquina quiero teorizar una
 ciudad posible — no una utopía: una Medellín que ya existe en fragmentos y solo falta componer».
 
-**Beat 2 — La tesis en una frase (≈1,5 min).** La ciudad posible es la ciudad **bien asignada**:
-asigna cada asunto al registro capaz de resolverlo — **computa** lo computable, **cultiva** lo
-emergente, **delibera** lo relevante. Rematá con la simetría: «el funcionalismo fracasó por computar
-lo emergente; la smart city fracasa por computar lo relevante — el mismo error con signo invertido».
-(En el deck: la tríada se arma sola.)
+**Beat 2 — La tesis en una frase (≈1,5 min).** «La ciudad **se autoproduce**: genera los
+componentes —tejido, instituciones, ciudadanos— que a su vez la generan». Aclaralo en el acto:
+autopoiesis como **lente de lectura, no teorema** —evidencia consistente con, no prueba de—. El
+peligro no es que una máquina la gobierne desde afuera, sino que esa autoproducción **se cierre**:
+que reproduzca siempre las mismas distinciones —la retícula del planificador, la métrica del
+mercado— y subsuma el resto. La ciudad posible es la ciudad **bien asignada**: no un orden que un
+soberano imponga, sino la constitución con que la ciudad mantiene su autoproducción **abierta**
+—distribuye sus propios registros y los deja disputables desde dentro—: **computa** lo computable,
+**cultiva** lo emergente, **delibera** lo relevante. Rematá con la simetría: «el funcionalismo
+computó lo emergente; la smart city computa lo relevante — la misma **clausura** con signo
+invertido: dos maneras de cerrar la ciudad sobre una sola de sus distinciones». (En el deck: la
+tríada se arma sola.)
 
 **Beat 3 — El delta, con honestidad (≈1 min).** Decilo vos antes de que te lo pregunten: «esto
 tiene parientes —Scott, Ostrom, Healey, la subsidiariedad epistémica de Jasanoff—; mi diferencia es
@@ -33,7 +40,11 @@ Esto te blinda (ver objeción 1).
   medido en la red real). La ciudad posible institucionaliza el **pluralismo métrico** y la
   **contra-métrica** sobre datos públicos (EPM), no la vigilancia total.
 - *Técnica:* el monopolio del juicio (Plan Piloto de Sert y Wiener desbordado por las laderas);
-  cultivar ≠ laissez-faire (mostrá Schelling: la segregación emerge, hay que ponerle umbral).
+  cultivar ≠ laissez-faire (mostrá Schelling: la segregación emerge, hay que ponerle umbral). Y el
+  agenciamiento humano es **inmanente**, no soberano: quien habita no programa la ciudad desde
+  afuera —ese es el sueño funcionalista—, la **perturba** desde dentro (gatilla el cambio, no lo
+  especifica); esa re-perturbación es lo que mantiene el sistema **abierto** en vez de cerrado, y
+  eso es lo político.
 
 **Beat 5 — Viabilidad (≈1,5 min).** La prueba del lunes: operador (EPM, ~20 % del presupuesto),
 vehículo legal (presupuesto participativo, 5 % de la inversión, Acuerdo 028 de 2017), piloto de 100
@@ -41,14 +52,16 @@ días (deliberar UNA métrica del centro), adversarios con nombre, y el riesgo (
 escondido. «No refunda la política ni inventa tecnología: recombina lo que la ciudad ya construyó.»
 
 **Beat 6 — Cierre (≈30 s).** Volvé a Junín: la cámara tendrá métrica pública, la junta podrá
-computar la contraria, y diciembre seguirá ilegible para todos los tableros — «porque la ciudad
-posible reserva a sus habitantes lo único que ninguna máquina puede hacer: **producir lo posible**».
+computar la contraria, y diciembre seguirá ilegible para todos los tableros — «porque **producir lo
+posible** no es un privilegio que esta ciudad *reserve* a sus habitantes, sino aquello que su
+autoproducción realiza *a través* de ellos, y que ninguna máquina, que procesa sin habitar,
+comparte».
 
 *Regla de oro:* si te cortan el tiempo, sacá los ejemplos, nunca la tesis (Beat 2) ni el delta (Beat 3).
 
 ---
 
-## B. Kit anti-objeciones (las 4 que te pueden apretar)
+## B. Kit anti-objeciones (las 6 que te pueden apretar)
 
 ### Objeción 1 — «¿No es esto subsidiariedad de toda la vida? Jasanoff ya acuñó *epistemic subsidiarity*.»
 **Reconocé y redirigí.** «Sí, vive en un barrio poblado, y lo digo en el ensayo. La subsidiariedad
@@ -93,6 +106,31 @@ que comprender *fuese* computar, la decisión de **qué** optimizar seguiría si
 al cómputo — y "deliberar lo relevante" sobrevive. D5 es su evidencia neutral: las tres métricas son
 igualmente exactas; nada *en el grafo* decide cuál usar.»
 
+### Objeción 5 — «Si la ciudad "se autoproduce" y la agencia es "inmanente, no soberana", ¿esto no es determinismo sistémico —una descripción cibernética que disuelve la política? Nadie decide; todo lo determina la estructura.»
+**Es la objeción que abre el giro autopoiético; dala vuelta.** «Al revés: la agencia inmanente es
+*precisamente* lo político. No programa la ciudad desde afuera —ese es el sueño funcionalista, el
+soberano que decreta la vida desde el plano—; la **perturba** desde dentro: la perturbación *gatilla*
+el cambio sin especificarlo (acoplamiento estructural). Pero es **decisiva**, no ausente: es el
+mecanismo que mantiene la autoproducción **abierta** en vez de **cerrada**. El determinismo real es
+la *clausura* —funcionalismo, smart city—: un sistema que reproduce siempre sus mismas distinciones y
+subsume el resto. Lo político es re-perturbarlo, reingresar la distinción que quedó como ruido
+(contra-métrica, deliberación). Que la agencia no sea soberana no la vuelve impotente: la vuelve el
+resto irreducible que ningún optimizador se fija a sí mismo — y D13 lo mide: hay un margen que
+ninguna métrica resuelve por nosotros.» — *No niegues el sistema; mostrá que la política vive en su
+apertura, no fuera de él.*
+
+### Objeción 6 — «¿La autopoiesis de Maturana y Varela aplica *literalmente* a una ciudad? La definieron para lo vivo —clausura operacional, autoproducción de los componentes—; extenderla a lo social es metáfora indebida.»
+**Concedé el estatuto estricto y blindate con el guardarraíl epistémico.** «Tenés razón en el punto
+estricto, y por eso la uso como **lente de lectura, no como teorema**. No afirmo que Medellín sea un
+sistema autopoiético en el sentido biológico de Maturana–Varela; digo que leerla así —como una
+autoproducción que puede **abrirse** o **cerrarse**— ilumina lo que está en juego. Mis
+demostraciones evidencian **emergencia, auto-organización e invariancia de escala** —Zipf sobre
+33.933 ciudades, la segregación de Schelling, el foco informal de Hotelling—: la *cara empírica*
+**consistente con** esa lectura, **nunca su prueba**. Cada vez que lo cito digo "evidencia
+consistente con", no "demostración de". Y el argumento político no pende de que la analogía biológica
+sea exacta: pende del corte categorial —computar / cultivar / deliberar—, que sostengo por
+separado.» — *La honestidad del "consistente con, no prueba de" es tu escudo, no tu debilidad.*
+
 ---
 
 ## C. Preguntas más blandas (respuestas de una línea)
@@ -109,3 +147,39 @@ igualmente exactas; nada *en el grafo* decide cuál usar.»
 
 *Si no sabés algo:* «no lo medí; es un programa verificable con [dato nombrado]». Honestidad > adorno
 — es lo que sostuvo todo el trabajo.
+
+---
+
+## D. Arsenal empírico de defensa — los cuatro experimentos nuevos (qué prueban, su límite honesto)
+
+Ya tenés en el bolsillo D4 (Schelling, obj. 3) y D5 (tres métricas, obj. 4). El giro autopoiético
+sumó cuatro demostraciones más sobre la red **real** de Medellín — con **trece** en total (D1–D13;
+cinco núcleo + ocho extensiones), siete de ellas reales sobre la red (D5, D6, D8, D9, D11, D12, D13).
+Cada una prueba **poco pero firme**, y su límite se declara antes de que te lo saquen:
+
+- **D10 — Braess/Wardrop (congestión).** *Prueba:* el óptimo del **todo** no es la suma de los
+  óptimos egoístas de las **partes** — existe efecto Braess: cerrar una calle puede mejorar el flujo
+  agregado (una arista-Braess robusta, **+1,37 %**; PoA = 1,03). Es la **autonomía del todo sobre las
+  partes**: la ciudad computada devuelve lo que su computador no controla. *Límite honesto:* demanda
+  O-D **sintética**, red peatonal usada como topología vial y capacidad constante → las magnitudes
+  son modestas; lo robusto es el hallazgo cualitativo, no la cifra fina.
+- **D11 — Hotelling (comercio informal).** *Prueba:* el comercio informal **se auto-organiza** — se
+  aglomera **~2,6×** más que el óptimo social de cobertura (robusto en el barrido N=10–60), el foco
+  de Junín como **equilibrio emergente**, no desorden que corregir. *Límite honesto:* la
+  mejor-respuesta **cicla** (no hay Nash puro; se fotografía una oscilación estable), la demanda es un
+  proxy de densidad, y el modelo no incluye precios, arriendo ni control policial.
+- **D12 — Difusión (alcance encarnado).** *Prueba:* la pendiente **encoge el alcance** — la isócrona
+  de 15 min cae **24 %** en la ladera vs **16 %** en el centro plano; el footfall es un **campo
+  relacional** cerrado sobre la propia red (clausura operacional) que el terreno reescribe. *Límite
+  honesto:* el footfall salió **difuso**, no dramático (top 1 % concentra apenas 2,4 %), y se reporta
+  tal cual; el hallazgo con filo es la **asimetría del alcance**, no un hotspot.
+- **D13 — Minimax-regret (el margen político).** *Prueba:* **no hay portafolio robusto neutral** —
+  cuatro centralidades rankean nodos casi disjuntos (Jaccard medio **0,03**) y **ninguna** se fija a
+  sí misma como la correcta: hay un **margen inmanente** que ningún optimizador resuelve — evidencia
+  formal de que decidir qué importa es exterior al cómputo. *Límite honesto:* el minimax-regret formal
+  "elige" eigenvector, pero por una **patología** (métrica hiper-localizada), y así se reporta; lo
+  sólido es el margen, no el ganador nominal.
+
+*Cómo usarlos:* NO son prueba de la autopoiesis (guardarraíl: **evidencia consistente con, no prueba
+de**). Son la **cara empírica** —emergencia, auto-organización, autonomía del todo, margen
+no-optimizable— de la lectura autopoiética, medida sobre tu propia ciudad.

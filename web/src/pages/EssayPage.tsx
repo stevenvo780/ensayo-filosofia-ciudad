@@ -48,7 +48,7 @@ export default function EssayPage() {
         <main id="inicio" className="prose">
           <CollapsibleArticle>{body}</CollapsibleArticle>
           <div className="readmore">
-            Este ensayo se apoya en una <strong>tesis de respaldo</strong> con nueve demostraciones
+            Este ensayo se apoya en una <strong>tesis de respaldo</strong> con trece demostraciones
             computacionales reproducibles, el experimento T1–T6 y la propuesta del Banco Epistémico
             Urbano. <Link to="/tesis">Leer la tesis ↗</Link> ·{" "}
             <Link to="/presentacion">Ver la presentación ↗</Link>
