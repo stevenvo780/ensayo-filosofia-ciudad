@@ -96,9 +96,14 @@ const SECTIONS: Section[] = [
         desc: "El método asistido por IA: regla de integridad autor/IA, compuertas duras y batería adversarial.",
       },
       {
+        slug: "guion-presentacion",
+        title: "Guion de la presentación",
+        desc: "El guion hablado diapositiva por diapositiva (14 slides, ~10 min): qué se ve, qué decir y los tiempos, para leer y practicar.",
+      },
+      {
         slug: "guion-defensa",
         title: "Guion de defensa",
-        desc: "El guion hablado de la introducción y el kit de respuestas a las objeciones duras.",
+        desc: "El kit de respuestas a las objeciones duras de la ronda de preguntas (companion del guion de la presentación).",
       },
       {
         slug: "consigna",
