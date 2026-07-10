@@ -4,9 +4,9 @@
   font-family: "Helvetica Neue", Arial, sans-serif; }
 
 .deck .deck-net { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
-.deck .slide { position: absolute; inset: 0; z-index: 1; display: flex; overflow-y: auto; -webkit-overflow-scrolling: touch; cursor: pointer; }
-.deck .slide > .wrap { position: relative; margin: auto; width: 100%; max-width: 1080px;
-  padding: clamp(24px, 7vmin, 64px) clamp(22px, 7vw, 92px) clamp(64px, 10vmin, 90px); }
+.deck .slide { position: absolute; inset: 0; z-index: 1; display: flex; overflow: hidden; cursor: pointer; }
+.deck .slide > .wrap { position: relative; margin: auto; width: 100%; max-width: 1180px;
+  padding: clamp(20px, 5.4vmin, 56px) clamp(22px, 7vw, 92px) clamp(52px, 8vmin, 78px); }
 .deck .slide.title { background: radial-gradient(1100px 720px at 24% 0%, rgba(23, 52, 66, .5), transparent 75%); }
 
 .deck .mark { margin-bottom: 2.4vmin; }
@@ -33,8 +33,8 @@
 
 .deck .row { display: flex; gap: clamp(18px, 3vw, 42px); align-items: center; margin-top: 1vmin; }
 .deck .row .col { flex: 1; min-width: 0; }
-.deck .fig { background: #fff; border-radius: 1.4vmin; padding: 1.1vmin; box-shadow: 0 3vmin 6vmin rgba(0, 0, 0, .5); }
-.deck .fig img { width: 100%; display: block; border-radius: .7vmin; }
+.deck .fig { background: #fff; border-radius: 1.4vmin; padding: 1.1vmin; box-shadow: 0 3vmin 6vmin rgba(0, 0, 0, .5); max-width: 940px; margin: .6vmin auto 0; }
+.deck .fig img { width: 100%; display: block; border-radius: .7vmin; max-height: 46vh; object-fit: contain; }
 .deck .cap { font-size: clamp(.8rem, 1.9vmin, 1.05rem); color: var(--muted); margin-top: 1.1vmin; }
 .deck ul { margin: 1.4vmin 0 0 3vmin; }
 .deck li { font-size: clamp(1rem, 2.7vmin, 1.45rem); line-height: 1.5; margin: 1vmin 0; color: #d6e2e9; }
@@ -71,6 +71,8 @@
 }
 @media (prefers-reduced-motion: reduce) {
   .deck *, .deck *::before, .deck *::after { animation: none !important; transition: none !important; }
+  /* sin movimiento, el contenido aparece ya visible (evita quedar en opacity:0 del fundido) */
+  .deck .slide, .deck .slide .wrap, .deck .slide .wrap > * { opacity: 1 !important; transform: none !important; }
 }
 
 /* --- Widgets explicativos interactivos --- */

@@ -84,6 +84,18 @@ if (existsSync(iterDir)) {
   }
 }
 
+// docs/ciencia/*.md → materiales/ciencia-<basename>.md — explicadores por demostración
+// (la ciencia densa, explicada en lenguaje llano). Tolerante si la carpeta no existe.
+const cienciaDir = resolve(REPO, "docs/ciencia");
+if (existsSync(cienciaDir)) {
+  for (const f of readdirSync(cienciaDir)) {
+    if (f.toLowerCase().endsWith(".md")) {
+      const name = `ciencia-${f.toLowerCase()}`;
+      copy(`docs/ciencia/${f}`, `public/materiales/${name}`, `materiales/${name}`);
+    }
+  }
+}
+
 // marcador para asegurar que la carpeta content nunca quede vacía en el árbol
 const gk = resolve(WEB, "src/content/.gitkeep");
 if (!existsSync(gk)) writeFileSync(gk, "");

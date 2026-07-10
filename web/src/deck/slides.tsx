@@ -4,6 +4,8 @@ import { CountUp } from "../components/CountUp";
 import { MetricCenterViz } from "./MetricCenterViz";
 import { SchellingViz } from "./SchellingViz";
 import { TriadViz } from "./TriadViz";
+import { ZipfViz } from "./ZipfViz";
+import { DiffusionViz } from "./DiffusionViz";
 
 export interface Slide {
   content: ReactNode;
@@ -32,7 +34,7 @@ export const slides: Slide[] = [
   {
     content: (
       <>
-        <p className="kicker">La escena</p>
+        <p className="kicker">La escena · desde una esquina se teoriza</p>
         <h2>Seis de la tarde en Junín</h2>
         <p>
           El ventero mueve su carreta dos metros para quedar bajo el alero. La cámara del poste lo
@@ -43,9 +45,13 @@ export const slides: Slide[] = [
           Desde esta esquina quiero teorizar una ciudad posible. <strong>No una utopía:</strong> una
           Medellín que ya existe en fragmentos y solo falta componer.
         </p>
+        <p className="muted">
+          La informalidad no es ruido del flujo: es la ciudad como <em>obra</em> (Lefebvre) —un
+          componente que la ciudad produce y que la produce—.
+        </p>
       </>
     ),
-    note: "La informalidad no es ruido: es producción de ciudad (Lefebvre, la ciudad como obra). Lo que el tablero no puede leer —diciembre— es justo lo que hay que proteger.",
+    note: "La informalidad no es ruido: es producción de ciudad (Lefebvre, la ciudad como obra). Lo que el tablero no puede leer —diciembre— es justo lo que hay que proteger. Regla de oro del guion: si cortan el tiempo, sacar ejemplos, nunca la tesis ni el delta.",
   },
   {
     content: (
@@ -56,12 +62,13 @@ export const slides: Slide[] = [
         </h2>
         <p className="lede">
           No el orden que un soberano impone: la constitución con que la ciudad mantiene{" "}
-          <strong>abierta</strong> su autoproducción —genera los componentes que la generan—.
+          <strong>abierta</strong> su autoproducción —genera los componentes que la generan y los
+          deja disputables desde dentro—.
         </p>
         <TriadViz />
       </>
     ),
-    note: "Giro autopoiético: la ciudad se autoproduce (lente de lectura, no teorema). El peligro no es una máquina que gobierne desde afuera, sino que la autoproducción se CIERRE sobre una sola distinción —la retícula, la métrica—. Funcionalismo y smart city son esa clausura con signo distinto. «Bien asignada» sobrevive como la propuesta: la constitución que la mantiene abierta.",
+    note: "Giro autopoiético: la ciudad se autoproduce (lente de lectura, no teorema). El peligro no es una máquina que gobierne desde afuera, sino que la autoproducción se CIERRE sobre una sola distinción —la retícula, la métrica—. Funcionalismo (computó lo emergente) y smart city (computa lo relevante) son esa clausura con signo invertido. «Bien asignada» = computa lo computable, cultiva lo emergente, delibera lo relevante.",
   },
   {
     content: (
@@ -76,36 +83,50 @@ export const slides: Slide[] = [
         </p>
         <p>
           No asigna por prudencia ante fracasos ni por jurisdicción, sino por un{" "}
-          <strong>límite categorial</strong> demostrable desde el oficio —y medido sobre datos reales
-          de esta ciudad—. «Posible» = la <em>utopía experimental</em> de Lefebvre: explorar lo
-          posible implicado en lo real.
+          <strong>límite categorial</strong> mostrable desde el oficio —y medido sobre datos reales
+          de esta ciudad—.
+        </p>
+        <p className="muted">
+          Honestidad: el límite de lo <em>computable</em> lo medí; las otras dos fronteras —lo que
+          solo existe desplegándose, lo que ningún optimizador se fija a sí mismo— las sostengo como
+          distinción argumentada. «Posible» = la <em>utopía experimental</em> de Lefebvre: explorar
+          lo posible implicado en lo real.
         </p>
       </>
     ),
-    note: "Nombrar precedentes convierte la vulnerabilidad (¿no es esto ya conocido?) en fortaleza: sé exactamente qué añado: fundamento categorial + demostración propia + anclaje Medellín.",
+    note: "Nombrar precedentes convierte la vulnerabilidad (¿no es esto ya conocido?) en fortaleza. Objeción Jasanoff: la subsidiariedad asigna por escala/jurisdicción; la mía por límite modal-categorial, y lo demuestro desde el oficio. No pelear con Jasanoff: usarla de trampolín.",
   },
   {
     content: (
       <>
         <p className="kicker">Eje 1 · Ontológico — ¿de qué está hecha?</p>
         <h2>Tres materias trenzadas; ninguna es el silicio</h2>
-        <ul>
-          <li>
-            <strong>Tejido relacional vivo</strong> — se autoproduce (Zipf, q≈1); <em>symploké</em>{" "}
-            (Bueno). La informalidad como productor de ciudad, no como ruido.
-          </li>
-          <li>
-            <strong>Realidad institucional</strong> (Searle) — la métrica es función de estatus: «X
-            cuenta como Y en C», revisable. EPM y presupuesto participativo lo prueban.
-          </li>
-          <li>
-            <strong>Singularidad situada</strong> — contra el <em>no-lugar</em> (Augé) y la nivelación
-            métrica (Simmel): cosmotécnica (Hui). El Metrocable como singularidad producida.
-          </li>
-        </ul>
+        <div className="row">
+          <div className="col">
+            <ul>
+              <li>
+                <strong>Tejido relacional vivo</strong> — se auto-organiza (Zipf, q≈1);{" "}
+                <em>symploké</em> (Bueno). La informalidad produce ciudad, no es ruido.
+              </li>
+              <li>
+                <strong>Realidad institucional</strong> (Searle) — la métrica es función de estatus
+                con <strong>poderes deónticos</strong>: «X cuenta como Y en C», revisable. EPM y
+                presupuesto participativo lo prueban.
+              </li>
+              <li>
+                <strong>Singularidad situada</strong> — contra el <em>no-lugar</em> (Augé) y la
+                nivelación métrica (Simmel): cosmotécnica (Hui). El Metrocable como singularidad
+                producida.
+              </li>
+            </ul>
+          </div>
+          <div className="col">
+            <ZipfViz />
+          </div>
+        </div>
       </>
     ),
-    note: "Responde literalmente la pregunta guía: tejido relacional / institucional / no-lugar / singularidad-vs-genérico. Simmel es la genealogía de la métrica.",
+    note: "Responde la pregunta guía: tejido relacional / institucional / singularidad-vs-genérico. Zipf (D1): la jerarquía de tamaños del SISTEMA de ciudades emerge sin planificador (33.933 ciudades, q≈1) —cara empírica consistente con la lectura autopoiética, nunca su prueba; es restricción de realismo, no programa—. Simmel es la genealogía de la métrica.",
   },
   {
     content: (
@@ -126,11 +147,11 @@ export const slides: Slide[] = [
         </div>
         <p className="cap">
           D11 · La informalidad como componente que la ciudad produce y que la produce —tejido vivo,
-          no ruido—.
+          no ruido—. Robusto en N = 10–60 (2,1–3,9×). Computar <em>para</em> ella, no contra ella.
         </p>
       </>
     ),
-    note: "El ventero de la escena inicial, ahora medido: equilibrio de mejor-respuesta robusto en N=10–60 (2,1–3,9× vs óptimo). La informalidad no es fricción del flujo sino producción de ciudad (Lefebvre, la ciudad como obra) —un componente que la ciudad se autoproduce—. Computar PARA ella, no contra ella.",
+    note: "El ventero de la escena inicial, ahora medido: equilibrio de mejor-respuesta robusto en N=10–60 (2,1–3,9× vs óptimo). Siete de cada diez medellinenses asocian el centro con esa informalidad (Medellín Cómo Vamos, 2024). La informalidad no es fricción del flujo sino producción de ciudad (Lefebvre). Honestidad: la mejor-respuesta cicla (no hay Nash puro); demanda ∝ densidad.",
   },
   {
     content: (
@@ -144,46 +165,83 @@ export const slides: Slide[] = [
             <h2>La métrica decide el centro</h2>
             <p>
               Sobre la red peatonal <strong>real</strong> de Medellín (<CountUp to={7598} /> nodos),
-              tres centralidades exactas señalan centros <strong>casi disjuntos</strong>: Jaccard{" "}
-              <CountUp to={0.1} decimals={2} /> / <CountUp to={0.04} decimals={2} /> /{" "}
-              <CountUp to={0} decimals={2} />. Probá las métricas ▶
+              tres centralidades <strong>exactas</strong> —intermediación, cercanía, vector propio—
+              señalan centros <strong>casi disjuntos</strong>: Jaccard <CountUp to={0.1} decimals={2} />{" "}
+              / <CountUp to={0.04} decimals={2} /> / <CountUp to={0} decimals={2} />. Probá las
+              métricas ▶
             </p>
             <p className="lede">
               El centro no se descubre: <strong>se decide.</strong>
+            </p>
+            <p className="muted">
+              Verificación local de Crucitti-Latora-Porta (2006). Nada <em>en el grafo</em> dice qué
+              métrica debe importar: elegirla es un acto exterior al cómputo.
             </p>
           </div>
         </div>
       </>
     ),
-    note: "Verificación local de un resultado de ciencia de redes (Crucitti-Latora-Porta 2006). Sobrevive al gradualismo: ningún optimizador fija su propia función objetivo.",
+    note: "Verificación local de un resultado de ciencia de redes (Crucitti-Latora-Porta 2006). El corredor prominente no es artefacto (D9: z≈188). Sobrevive al gradualismo: ningún optimizador fija su propia función objetivo; decidir qué se optimiza es exterior a la optimización, y donde esa métrica es pública y disputada, es político.",
   },
   {
     content: (
       <>
-        <p className="kicker">Eje 2 · Poder — la decisión de diseño</p>
-        <h2>Cambiar el estatuto del mirar</h2>
+        <p className="kicker">Eje 2 · Poder — el cuerpo reescribe el alcance</p>
+        <div className="row">
+          <div className="col">
+            <DiffusionViz />
+          </div>
+          <div className="col">
+            <h2>La pendiente encoge la ciudad</h2>
+            <p>
+              El <em>footfall</em> es un campo relacional cerrado sobre la propia red —
+              <strong>clausura operacional</strong>—. La isócrona de 15 min cae{" "}
+              <CountUp to={16} suffix=" %" /> en el centro plano y <CountUp to={24} suffix=" %" /> en
+              la ladera.
+            </p>
+            <p className="lede">
+              El alcance no es del mapa: es del <strong>cuerpo que sube.</strong>
+            </p>
+            <p className="muted">
+              La fatiga —el cuerpo de Merleau-Ponty— reescribe la centralidad que la métrica declara
+              neutral. Es el fundamento del Metrocable (D6, D8, D12).
+            </p>
+          </div>
+        </div>
+      </>
+    ),
+    note: "D12: el footfall salió DIFUSO (top 1% concentra 2,4%) y se reporta tal cual; el hallazgo con filo es la asimetría del alcance por pendiente (isócrona −16% plano, −24% ladera). Campo relacional cerrado sobre la red (clausura operacional) que el terreno reescribe (acoplamiento con el medio). El centro del cuerpo dista 710 m del centro del flujo a escala ciudad.",
+  },
+  {
+    content: (
+      <>
+        <p className="kicker">Eje 2 · Poder — cambiar el estatuto del mirar</p>
+        <h2>Instituciones de una ciudad que se deja disputar</h2>
         <ul>
           <li>
-            <strong>Pluralismo métrico obligatorio:</strong> ninguna cartografía pública con una sola
-            métrica.
+            <strong>Pluralismo métrico obligatorio:</strong> ninguna cartografía pública en disputa
+            con una sola métrica; toda foto oficial lleva su disenso a la vista.
           </li>
           <li>
-            <strong>Derecho a la contra-métrica:</strong> datos y cómputo como bien común auditable
-            (EPM).
+            <strong>Derecho a la contra-métrica:</strong> datos y cómputo municipales como bien común
+            auditable (EPM); cualquier junta computa y publica su lectura.
           </li>
           <li>
-            <strong>Presupuesto participativo epistémico:</strong> la comunidad decide qué se mide y
-            qué no se vigila.
+            <strong>Presupuesto participativo epistémico:</strong> del 5 % de la inversión a las
+            funciones objetivo — la comunidad decide qué se mide y qué no se vigila.
           </li>
           <li>
             <strong>Asimetría invertida:</strong> algoritmo transparente, ciudadano opaco; espacios
-            autogestionados por diseño.
+            libres y autogestionados por diseño.
           </li>
         </ul>
-        <p className="muted">Deleuze, por su final: no lamentar la modulación — «buscar nuevas armas».</p>
+        <p className="muted">
+          La captura del PP está <strong>tratada</strong>, no silenciada: pluralidad, sorteo, disenso
+          publicado. Deleuze, por su final: «buscar nuevas armas».
+        </p>
       </>
     ),
-    note: "Anti-captura: la pluralidad obliga a capturar varias métricas a la vez; contra-métrica refutable; sorteo y veedurías. Admito la captura documentada del PP.",
+    note: "Anti-captura: la pluralidad obliga a capturar varias métricas a la vez; contra-métrica refutable con los mismos datos; sorteo y veedurías (Ley 850). Admito la captura documentada del PP por clientelismos y actores armados. No una ciudad sin conflicto: una donde el conflicto tiene escenarios en vez de algoritmos que prometen suprimirlo.",
   },
   {
     content: (
@@ -195,11 +253,12 @@ export const slides: Slide[] = [
             <p>
               El Plan Piloto de Wiener y Sert (1948–52) fue desbordado por la ciudad de las laderas.
               El funcionalismo no falló por planificar: <strong>cerró la ciudad</strong> sobre la
-              distinción del plano —computó lo emergente; uno fija la regla, millones son subsumidos—.
+              distinción del plano —trató como <em>instrucción</em> lo que solo puede ser{" "}
+              <em>perturbación</em>—.
             </p>
             <p>
-              «Aprender de la calle» es <em>congelar el pasado como futuro</em>: la subsunción
-              estadística forcluye lo posible.
+              «Aprender de la calle» no lo salva: la subsunción estadística <em>forcluye lo posible</em>{" "}
+              —congela el pasado como futuro— donde un proyecto de ciudad necesita abrirlo.
             </p>
           </div>
           <div className="col">
@@ -208,7 +267,7 @@ export const slides: Slide[] = [
         </div>
       </>
     ),
-    note: "Capital vs emancipación se decide en la propiedad: cómputo público y local. Cultivar = condiciones + monitoreo + umbral deliberado (anti-Hayek). Urbanismo social = cultivo estatal probado.",
+    note: "Objeción funcionalismo→IA: aprender la distribución de lo actual congela el pasado como futuro; el error no es la subsunción sino el MONOPOLIO del juicio (uno reflexiona, millones son subsumidos). Cultivar ≠ Hayek: Schelling muestra que lo emergente no es benigno (0,50→0,87); cultivar = condiciones + monitoreo + umbral deliberado. Urbanismo social = cultivo estatal probado (Cerdá 2012).",
   },
   {
     content: (
@@ -217,10 +276,9 @@ export const slides: Slide[] = [
         <h2>Cerrar una calle mejora el flujo</h2>
         <p>
           Miles de rutas egoístas sobre la red vial <strong>real</strong> (<CountUp to={22863} />{" "}
-          nodos, <CountUp to={33988} /> aristas) producen un flujo que nadie eligió. Existe una{" "}
-          <strong>arista-Braess robusta</strong>: cerrarla mejora el tiempo agregado un{" "}
-          <CountUp to={1.37} decimals={2} suffix=" %" /> (paradoja de Braess; PoA ≈{" "}
-          <CountUp to={1.03} decimals={2} />).
+          nodos) producen un flujo que nadie eligió. Existe una{" "}
+          <strong>arista-Braess robusta</strong>: cerrarla mejora el tiempo agregado{" "}
+          <CountUp to={1.37} decimals={2} suffix=" %" /> (PoA ≈ <CountUp to={1.03} decimals={2} />).
         </p>
         <div className="fig">
           <img
@@ -229,12 +287,12 @@ export const slides: Slide[] = [
           />
         </div>
         <p className="cap">
-          D10 · La ciudad computada devuelve resultados que su computador no controla. Autopoiesis,
-          no metáfora.
+          D10 · La ciudad computada devuelve lo que su computador no controla —el todo es autónomo de
+          sus partes—. Autopoiesis, no metáfora.
         </p>
       </>
     ),
-    note: "Braess = el todo es autónomo de sus partes: el ruteo agregado no es la suma de óptimos egoístas, y cerrar una calle puede mejorarlo. Refutación viva del sueño funcionalista de computar lo emergente: la ciudad se autoproduce y devuelve lo que ningún planificador programó. Honestidad: red REAL, demanda O-D sintética (300 zonas).",
+    note: "Braess = el todo es autónomo de sus partes: el ruteo agregado no es la suma de óptimos egoístas, y cerrar una calle puede mejorarlo. Refutación viva del sueño funcionalista de computar lo emergente. Honestidad: red REAL, demanda O-D sintética (300 zonas), capacidad constante → magnitudes modestas; lo robusto es el hallazgo cualitativo, no la cifra fina.",
   },
   {
     content: (
@@ -242,33 +300,34 @@ export const slides: Slide[] = [
         <p className="kicker">Eje 3 · Técnica — agencia inmanente</p>
         <h2>Ni soberana ni ausente: la agencia es <strong>inmanente</strong></h2>
         <p>
-          Quien habita no programa la ciudad desde afuera; la perturba desde dentro —gatilla el
-          cambio, no lo especifica—. Su medida la gradúa la asignación.
+          Quien habita no programa la ciudad desde afuera —ese es el sueño funcionalista—; la{" "}
+          <strong>perturba desde dentro</strong>: gatilla el cambio, no lo especifica (acoplamiento
+          estructural). Su medida la gradúa la asignación.
         </p>
         <div className="three">
           <div className="card">
             <b>Computar</b>
             <span>
-              lo formalizable: automatización bienvenida. Todo el aparato corrió en{" "}
+              lo formalizable: automatización barata. Todo el aparato corrió en{" "}
               <strong>
                 un nodo de <CountUp to={32} /> núcleos
-              </strong>
-              .
+              </strong>{" "}
+              —la suficiencia no necesita hiperescaladores—.
             </span>
           </div>
           <div className="card">
             <b>Sugerir</b>
-            <span>la IA aventura escenarios sin autoridad para decidir.</span>
+            <span>la IA aventura escenarios sin autoridad para decidir: decidir exige un para-qué situado que no está en los datos.</span>
           </div>
           <div className="card">
             <b>Deliberar</b>
             <span>donde las métricas divergen, la ciudad reingresa y disputa sus distinciones a través de quien la habita: el presupuesto participativo como órgano.</span>
           </div>
         </div>
-        <p className="muted">El Banco Epistémico Urbano: órgano epistémico de la ciudad, no su cerebro.</p>
+        <p className="muted">El Banco Epistémico Urbano: órgano epistémico de la ciudad, no su cerebro. Cuatro métricas rankean prioridades casi disjuntas; ninguna «la» correcta (D13).</p>
       </>
     ),
-    note: "Agencia inmanente (acoplamiento estructural): la perturbación gatilla, no especifica; su medida la gradúa el registro —delegada al cómputo, sugerida por la IA, o intensificada como deliberación—. Y la viabilidad vale oro: la ciudad posible cuesta un nodo universitario, no un hiperescalador; escalar no cambia la categoría.",
+    note: "Agencia inmanente (acoplamiento estructural): la perturbación gatilla, no especifica; su medida la gradúa el registro —delegada al cómputo, sugerida por la IA, o intensificada como deliberación—. D13: margen inmanente que ningún optimizador fija. Viabilidad: la ciudad posible cuesta un nodo universitario, no un hiperescalador; escalar no cambia la categoría.",
   },
   {
     content: (
@@ -279,19 +338,19 @@ export const slides: Slide[] = [
           <tbody>
             <tr>
               <td>Operador</td>
-              <td>EPM (pública) + universidades — soberanía de infraestructura ya existente</td>
+              <td>EPM (100 % pública, ~20 % del presupuesto) + universidades — soberanía de infraestructura ya existente</td>
             </tr>
             <tr>
               <td>Vehículo legal</td>
-              <td>Presupuesto participativo + veedurías ciudadanas</td>
+              <td>Presupuesto participativo (Acuerdo 028/2017, 5 % de la inversión) + veedurías (Ley 850)</td>
             </tr>
             <tr>
               <td>Piloto 100 días</td>
-              <td>deliberar públicamente UNA métrica ya operante del centro</td>
+              <td>deliberar públicamente UNA función objetivo ya operante: la métrica que hoy prioriza el centro</td>
             </tr>
             <tr>
               <td>Adversarios</td>
-              <td>vendedores de vigilancia; administraciones con KPIs opacos</td>
+              <td>vendedores de vigilancia llave en mano; administraciones con KPIs opacos</td>
             </tr>
             <tr>
               <td>Riesgo</td>
@@ -304,7 +363,7 @@ export const slides: Slide[] = [
         </p>
       </>
     ),
-    note: "Esto separa «posible» de «utópico»: operador, vehículo legal, piloto, adversarios y riesgo, todos reales.",
+    note: "Esto separa «posible» de «utópico»: operador, vehículo legal, piloto, adversarios y riesgo, todos reales. ¿Quién asigna la asignación? No hay primer asignador soberano: la asignación es un componente que la ciudad produce y reingresa; la constitución solo la vuelve explícita y re-perturbable. Y es por aspecto, no por asunto: un semáforo tiene núcleo computable, métrica disputable y efectos emergentes a la vez.",
   },
   {
     title: true,

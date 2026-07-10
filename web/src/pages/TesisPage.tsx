@@ -13,8 +13,28 @@ export default function TesisPage() {
   useRevealObserver(body);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
     document.title = "Tesis de respaldo — " + title;
+    const hash = decodeURIComponent(window.location.hash.replace(/^#/, ""));
+    if (!hash) {
+      window.scrollTo(0, 0);
+      return;
+    }
+    // Deep-link desde el ensayo (/tesis#d11, #d5, secciones…): esperar a que el
+    // markdown y las figuras estén en el DOM y desplazar al ancla, con offset por
+    // la navbar fija. Reintenta unos frames porque el contenido monta async.
+    let tries = 0;
+    let raf = 0;
+    const tryScroll = () => {
+      const el = document.getElementById(hash);
+      if (el) {
+        const y = el.getBoundingClientRect().top + window.scrollY - 90;
+        window.scrollTo({ top: Math.max(0, y), behavior: "auto" });
+      } else if (tries++ < 40) {
+        raf = requestAnimationFrame(tryScroll);
+      }
+    };
+    raf = requestAnimationFrame(tryScroll);
+    return () => cancelAnimationFrame(raf);
   }, [title]);
 
   return (

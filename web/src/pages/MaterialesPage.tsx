@@ -116,7 +116,7 @@ const SECTIONS: Section[] = [
       {
         slug: "iteraciones",
         title: "Índice — el arco completo",
-        desc: "La bitácora: los ocho hitos (0→7) en una sola página, con los commits como evidencia.",
+        desc: "La bitácora: los nueve hitos (0→8) en una sola página, con los commits como evidencia.",
       },
       {
         slug: "iter-0-consigna",
@@ -158,13 +158,18 @@ const SECTIONS: Section[] = [
         title: "7 · Precisión modal + auditabilidad",
         desc: "El verbo exacto de cada afirmación y las compuertas que hacen el trabajo verificable.",
       },
+      {
+        slug: "iter-8-autopoiesis",
+        title: "8 · Giro autopoiético + 4 experimentos",
+        desc: "El lente vira a autopoiesis (abierta/cerrada, agencia inmanente) y se suman D10–D13.",
+      },
     ],
   },
   {
     id: "evidencia",
     kicker: "04",
     title: "Evidencia computacional",
-    lead: "Los datos y el código que sostienen el ensayo: trece demostraciones reproducibles con semilla fija, sobre datos reales de Medellín (y del mundo, cuando aplica).",
+    lead: "Los datos y el código que sostienen el ensayo: trece demostraciones reproducibles con semilla fija, sobre datos reales de Medellín (y del mundo, cuando aplica). Y, para la ciencia densa, un explicador en lenguaje llano de cada una: qué pregunta, el algoritmo paso a paso, qué halló y su matiz honesto.",
     docs: [
       {
         slug: "resultados",
@@ -175,6 +180,86 @@ const SECTIONS: Section[] = [
         slug: "ciencia-readme",
         title: "Guía de reproducción",
         desc: "El detalle operativo: qué corre cada script, qué datos usa y qué produce.",
+      },
+      {
+        slug: "ciencia-juegos",
+        title: "Explicador · Teoría de juegos",
+        desc: "Síntesis llana: congestión (Braess) y localización (Hotelling) sobre la red real.",
+      },
+      {
+        slug: "ciencia-redes",
+        title: "Explicador · Ciencia de redes",
+        desc: "Síntesis llana: centralidad (la métrica decide el centro) y difusión con pendiente.",
+      },
+      {
+        slug: "ciencia-decision",
+        title: "Explicador · Teoría de la decisión",
+        desc: "Síntesis llana: el margen irreducible que ningún optimizador fija (minimax-regret).",
+      },
+      {
+        slug: "ciencia-d1",
+        title: "D1 · Ley de Zipf",
+        desc: "Por qué el tamaño de las ciudades sigue un patrón casi perfecto (q≈1) sin planificador.",
+      },
+      {
+        slug: "ciencia-d2",
+        title: "D2 · Ley de escala",
+        desc: "Cómo crecen los servicios con la población (Bettencourt–West, β≈0,90), medido en datos reales.",
+      },
+      {
+        slug: "ciencia-d3",
+        title: "D3 · Dimensión fractal",
+        desc: "La forma sin escala característica de una huella urbana (conteo de cajas).",
+      },
+      {
+        slug: "ciencia-d4",
+        title: "D4 · Segregación de Schelling",
+        desc: "Cómo una preferencia local leve produce segregación global que nadie diseñó.",
+      },
+      {
+        slug: "ciencia-d5",
+        title: "D5 · La métrica decide el centro",
+        desc: "Tres centralidades exactas señalan centros casi disjuntos: el centro no se descubre, se decide.",
+      },
+      {
+        slug: "ciencia-d6",
+        title: "D6 · La métrica del cuerpo",
+        desc: "La pendiente (función de Tobler) desplaza el centro: la fatiga reescribe la geografía.",
+      },
+      {
+        slug: "ciencia-d7",
+        title: "D7 · Umbral de intervención",
+        desc: "Cuánta institución cuesta romper la segregación (anclar, ~55 %; diluir no basta).",
+      },
+      {
+        slug: "ciencia-d8",
+        title: "D8 · Escala ciudad",
+        desc: "Los mismos hallazgos a radio 4 km, con desnivel real de 962 m.",
+      },
+      {
+        slug: "ciencia-d9",
+        title: "D9 · Robustez (modelos nulos)",
+        desc: "¿Estructura real o artefacto? La prominencia del corredor vs 60 redes nulas (z≈188).",
+      },
+      {
+        slug: "ciencia-d10",
+        title: "D10 · Congestión y Braess",
+        desc: "Precio de la anarquía (1,03) y por qué cerrar una calle puede mejorar el flujo de todos.",
+      },
+      {
+        slug: "ciencia-d11",
+        title: "D11 · Localización de Hotelling",
+        desc: "Por qué el comercio informal se aglomera (2,6× vs el óptimo social).",
+      },
+      {
+        slug: "ciencia-d12",
+        title: "D12 · Difusión y alcance",
+        desc: "Cómo se esparce el footfall y cómo la pendiente encoge lo caminable (−16 % / −24 %).",
+      },
+      {
+        slug: "ciencia-d13",
+        title: "D13 · Teoría de la decisión",
+        desc: "¿Hay una métrica «correcta» del centro? El minimax-regret dice que no.",
       },
     ],
     links: [
