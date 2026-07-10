@@ -98,7 +98,7 @@ const SECTIONS: Section[] = [
       {
         slug: "guion-presentacion",
         title: "Guion de la presentación",
-        desc: "El guion hablado diapositiva por diapositiva (14 slides, ~10 min): qué se ve, qué decir y los tiempos, para leer y practicar.",
+        desc: "El discurso hablado, diapositiva por diapositiva, en prosa continua para leer en voz alta y practicar (14 slides, ~10 min).",
       },
       {
         slug: "guion-defensa",
