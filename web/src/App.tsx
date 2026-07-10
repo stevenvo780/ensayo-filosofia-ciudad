@@ -26,6 +26,8 @@ function retryImport<T>(factory: () => Promise<T>): Promise<T> {
 // navegación por router nunca dependa de un chunk que pueda faltar. Solo el deck
 // —más pesado (framer-motion + canvases)— queda diferido, con auto-recarga.
 const DeckPage = lazy(() => retryImport(() => import("./pages/DeckPage")));
+const MaterialesPage = lazy(() => retryImport(() => import("./pages/MaterialesPage")));
+const LecturaPage = lazy(() => retryImport(() => import("./pages/LecturaPage")));
 
 export default function App() {
   return (
@@ -35,6 +37,8 @@ export default function App() {
           <Route path="/" element={<EssayPage />} />
           <Route path="/tesis" element={<TesisPage />} />
           <Route path="/presentacion" element={<DeckPage />} />
+          <Route path="/materiales" element={<MaterialesPage />} />
+          <Route path="/lectura/:slug" element={<LecturaPage />} />
           <Route path="*" element={<EssayPage />} />
         </Routes>
       </Suspense>

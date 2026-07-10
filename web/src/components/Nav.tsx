@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Contrast, Play, Github, Download } from "lucide-react";
+import { Contrast, Play, Github, Download, FolderOpen } from "lucide-react";
 import { Logo } from "./Logo";
 import { useTheme } from "../hooks/useTheme";
 import { useScrollSpy } from "../hooks/useScrollSpy";
@@ -47,6 +47,9 @@ export function Nav({ sections = [] }: { sections?: Section[] }) {
           </NavLink>
           <NavLink to="/presentacion" className={cta}>
             <Play size={13} aria-hidden="true" /> Presentación
+          </NavLink>
+          <NavLink to="/materiales" className={cta}>
+            <FolderOpen size={13} aria-hidden="true" /> Materiales
           </NavLink>
         </span>
 

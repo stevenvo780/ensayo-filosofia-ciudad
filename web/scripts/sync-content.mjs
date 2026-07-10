@@ -2,7 +2,7 @@
 // El ensayo y la tesis viven en ../ensayo y ../tesis; las figuras en ../ciencia/figs.
 // Este script los copia a src/content y public/figs para que el bundle sea autocontenido.
 // Es tolerante: si la fuente no existe (p. ej. build en la nube), conserva las copias.
-import { mkdirSync, copyFileSync, existsSync, writeFileSync } from "node:fs";
+import { mkdirSync, copyFileSync, existsSync, writeFileSync, readdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -13,6 +13,7 @@ const REPO = resolve(WEB, "..");
 const ensureDir = (p) => mkdirSync(p, { recursive: true });
 ensureDir(resolve(WEB, "src/content"));
 ensureDir(resolve(WEB, "public/figs"));
+ensureDir(resolve(WEB, "public/materiales"));
 
 function copy(from, to, label) {
   const src = resolve(REPO, from);
@@ -31,6 +32,33 @@ copy("ensayo/00_ensayo.md", "src/content/ensayo.md", "ensayo");
 copy("tesis/00_tesis.md", "src/content/tesis.md", "tesis");
 for (const d of ["D1", "D2", "D3", "D4", "D5", "D6", "D7", "D8"]) {
   copy(`ciencia/figs/${d}_mega.png`, `public/figs/${d}_mega.png`, `figs/${d}_mega.png`);
+}
+
+// Espejo de materiales: TODOS los .md del proyecto legibles y descargables en la
+// web (/materiales/<archivo>), con nombres legibles. Tolerante: si falta alguno,
+// se salta sin romper el build.
+const MATERIALES = [
+  ["CONSIGNA.md", "consigna.md"],
+  ["README.md", "readme.md"],
+  ["GUION-DEFENSA.md", "guion-defensa.md"],
+  ["CRITICA.md", "critica.md"],
+  ["CRITICA2.md", "critica2.md"],
+  ["CRITICA3.md", "critica3.md"],
+  ["ciencia/RESULTADOS.md", "resultados.md"],
+  ["ciencia/README.md", "ciencia-readme.md"],
+];
+for (const [from, name] of MATERIALES) {
+  copy(from, `public/materiales/${name}`, `materiales/${name}`);
+}
+
+// docs/*.md si existe la carpeta (tolerante si no existe ninguna).
+const docsDir = resolve(REPO, "docs");
+if (existsSync(docsDir)) {
+  for (const f of readdirSync(docsDir)) {
+    if (f.toLowerCase().endsWith(".md")) {
+      copy(`docs/${f}`, `public/materiales/${f.toLowerCase()}`, `materiales/${f.toLowerCase()}`);
+    }
+  }
 }
 
 // marcador para asegurar que la carpeta content nunca quede vacía en el árbol
