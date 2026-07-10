@@ -121,17 +121,23 @@ a { color: var(--accent); }
 .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
 .reveal.in { opacity: 1; transform: none; }
 
-/* === Ensayo: layout de dos columnas (sidebar índice + contenido) === */
-.essay-layout { max-width: 1120px; margin: 0 auto;
-  padding: clamp(44px, 6vw, 76px) clamp(16px, 4vw, 32px) clamp(56px, 9vw, 96px);
-  display: grid; grid-template-columns: 236px minmax(0, 1fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
-.essay-layout .prose { max-width: 46rem; margin: 0; padding: 0; }
-.essay-side { position: sticky; top: clamp(78px, 8vw, 104px); }
+/* === Ensayo: BASE = lectura en una columna centrada (óptima en vertical/portrait) === */
+.essay-layout { max-width: 46rem; margin: 0 auto;
+  padding: clamp(40px, 6vw, 72px) clamp(16px, 5vw, 28px) clamp(56px, 9vw, 96px); }
+.essay-layout .prose { max-width: none; margin: 0; padding: 0; }
+.essay-side { margin-bottom: 26px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
 
-/* al COLAPSAR: el índice se QUEDA en su sitio (riel angosto a la izquierda, sticky),
-   el contenido se ensancha y se recentra. El control no se mueve de posición. */
-.essay-layout:has(.essay-side details.toc:not([open])) { grid-template-columns: auto minmax(0, 1fr); }
-.essay-layout:has(.essay-side details.toc:not([open])) .prose { margin-inline: auto; }
+/* === Solo en desktop LANDSCAPE ancho: el índice pasa a sidebar izquierdo sticky === */
+@media (min-width: 1200px) and (orientation: landscape) {
+  .essay-layout { max-width: 1120px;
+    padding: clamp(44px, 6vw, 76px) clamp(16px, 4vw, 32px) clamp(56px, 9vw, 96px);
+    display: grid; grid-template-columns: 236px minmax(0, 1fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
+  .essay-layout .prose { max-width: 46rem; }
+  .essay-side { position: sticky; top: clamp(78px, 8vw, 104px); margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
+  /* al COLAPSAR: el índice se queda en su sitio (riel angosto), el contenido se recentra */
+  .essay-layout:has(.essay-side details.toc:not([open])) { grid-template-columns: auto minmax(0, 1fr); }
+  .essay-layout:has(.essay-side details.toc:not([open])) .prose { margin-inline: auto; }
+}
 
 /* índice — minimalista (línea vertical + activo ámbar, sin caja) */
 .essay-side .toc { border: 0; background: none; }
@@ -167,11 +173,6 @@ a { color: var(--accent); }
 .prose .section-body { animation: sectionIn .25s ease; padding-top: .2em; }
 @keyframes sectionIn { from { opacity: 0; } to { opacity: 1; } }
 
-@media (max-width: 900px) {
-  .essay-layout { grid-template-columns: 1fr; gap: 0; max-width: 46rem; padding-top: clamp(32px, 7vw, 48px); }
-  .essay-side { position: static; top: auto; margin-bottom: 28px; padding-bottom: 22px; border-bottom: 1px solid var(--line); }
-  .essay-layout .prose { max-width: none; }
-}
 @media (max-width: 640px) { .nav .hideSm { display: none; } }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
