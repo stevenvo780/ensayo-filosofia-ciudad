@@ -61,6 +61,18 @@ if (existsSync(docsDir)) {
   }
 }
 
+// docs/iteraciones/*.md → materiales/iter-<basename>.md (SLUG PLANO, sin barras,
+// para que /lectura/iter-<slug> funcione). Tolerante si la carpeta no existe.
+const iterDir = resolve(REPO, "docs/iteraciones");
+if (existsSync(iterDir)) {
+  for (const f of readdirSync(iterDir)) {
+    if (f.toLowerCase().endsWith(".md")) {
+      const name = `iter-${f.toLowerCase()}`;
+      copy(`docs/iteraciones/${f}`, `public/materiales/${name}`, `materiales/${name}`);
+    }
+  }
+}
+
 // marcador para asegurar que la carpeta content nunca quede vacía en el árbol
 const gk = resolve(WEB, "src/content/.gitkeep");
 if (!existsSync(gk)) writeFileSync(gk, "");

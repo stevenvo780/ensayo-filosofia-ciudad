@@ -96,11 +96,6 @@ const SECTIONS: Section[] = [
         desc: "El método asistido por IA: regla de integridad autor/IA, compuertas duras y batería adversarial.",
       },
       {
-        slug: "iteraciones",
-        title: "Bitácora de iteraciones",
-        desc: "La historia del ensayo por hitos numerados (0→7), con los commits como evidencia.",
-      },
-      {
         slug: "guion-defensa",
         title: "Guion de defensa",
         desc: "El guion hablado de la introducción y el kit de respuestas a las objeciones duras.",
@@ -113,8 +108,61 @@ const SECTIONS: Section[] = [
     ],
   },
   {
-    id: "evidencia",
+    id: "iteraciones",
     kicker: "03",
+    title: "Iteraciones del ensayo",
+    lead: "El arco completo del trabajo, hito por hito.",
+    docs: [
+      {
+        slug: "iteraciones",
+        title: "Índice — el arco completo",
+        desc: "La bitácora: los ocho hitos (0→7) en una sola página, con los commits como evidencia.",
+      },
+      {
+        slug: "iter-0-consigna",
+        title: "0 · Consigna y materia prima",
+        desc: "Las dos exposiciones previas y la consigna real del 7-jul que fija el entregable.",
+      },
+      {
+        slug: "iter-1-tesis",
+        title: "1 · Tesis extensa diagnóstica",
+        desc: "El primer texto largo y su aparato empírico inicial (D1–D5).",
+      },
+      {
+        slug: "iter-2-critica-1",
+        title: "2 · Crítica I — auditoría de la tesis",
+        desc: "Seis lentes + verificación adversarial (36/36); el aparato sube a datos reales.",
+      },
+      {
+        slug: "iter-3-giro",
+        title: "3 · El giro a cartografía crítica",
+        desc: "Llega la consigna real: de texto diagnóstico a proyectivo; la tesis pasa a respaldo.",
+      },
+      {
+        slug: "iter-4-critica-2",
+        title: "4 · Crítica II — frente a la consigna",
+        desc: "Seis lentes + verificación externa (45/45) y la división en dos textos.",
+      },
+      {
+        slug: "iter-5-ensayo-final",
+        title: "5 · Ensayo final + web + PDF + D6–D9",
+        desc: "«La ciudad bien asignada», la web interactiva, el PDF y cuatro demostraciones nuevas.",
+      },
+      {
+        slug: "iter-6-critica-3",
+        title: "6 · Crítica III — auditoría trimodelo",
+        desc: "Nueve lentes en tres familias de modelos; el patrón convergente, corregido.",
+      },
+      {
+        slug: "iter-7-auditabilidad",
+        title: "7 · Precisión modal + auditabilidad",
+        desc: "El verbo exacto de cada afirmación y las compuertas que hacen el trabajo verificable.",
+      },
+    ],
+  },
+  {
+    id: "evidencia",
+    kicker: "04",
     title: "Evidencia computacional",
     lead: "Los datos y el código que sostienen el ensayo: nueve demostraciones reproducibles con semilla fija, sobre datos reales de Medellín y del mundo.",
     docs: [
@@ -141,7 +189,7 @@ const SECTIONS: Section[] = [
   },
   {
     id: "repo",
-    kicker: "04",
+    kicker: "05",
     title: "Repositorio",
     lead: "Todo el proyecto en abierto: código de la web, contenido, ciencia e historial de versiones.",
     docs: [
