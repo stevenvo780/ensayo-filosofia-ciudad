@@ -370,6 +370,34 @@ export const slides: Slide[] = [
     note: "Esto separa «posible» de «utópico»: operador, vehículo legal, piloto, adversarios y riesgo, todos reales. ¿Quién asigna la asignación? No hay primer asignador soberano: la asignación es un componente que la ciudad produce y reingresa; la constitución solo la vuelve explícita y re-perturbable. Y es por aspecto, no por asunto: un semáforo tiene núcleo computable, métrica disputable y efectos emergentes a la vez.",
   },
   {
+    content: (
+      <>
+        <p className="kicker">Cómo se hizo · método abierto y reproducible</p>
+        <h2>Cómo se hizo</h2>
+        <ul>
+          <li>
+            <strong>Medido, no opinado.</strong> Trece experimentos reproducibles sobre datos{" "}
+            <strong>reales</strong> de Medellín: la malla de calles de OpenStreetMap, la elevación
+            satelital y el censo mundial de ciudades.
+          </li>
+          <li>
+            <strong>IA orquestada y declarada.</strong> La tesis, las decisiones y la voz son mías;
+            la IA ejecutó el cálculo y la crítica, y todo el proceso quedó registrado.
+          </li>
+          <li>
+            <strong>Auditado en rondas.</strong> Varias rondas de crítica con modelos de familias
+            distintas; cada frase usa el verbo que le corresponde —demuestra, ilustra o concede—.
+          </li>
+          <li>
+            <strong>Todo abierto.</strong> Código, datos y proceso públicos, con una semilla fija:
+            cualquiera lo vuelve a correr y obtiene las mismas cifras.
+          </li>
+        </ul>
+      </>
+    ),
+    note: "Responde la segunda mitad de la pregunta —cómo se hizo—. Método asistido por IA declarado (autor + IA), trece demostraciones reproducibles sobre datos reales, crítica adversarial multi-modelo por rondas, y todo abierto y auditable con semilla fija. La forma del trabajo encarna su propia tesis: computar lo computable, deliberar lo relevante, y la última palabra es del autor.",
+  },
+  {
     title: true,
     content: (
       <>
