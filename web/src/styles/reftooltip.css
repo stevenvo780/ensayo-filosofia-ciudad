@@ -64,13 +64,24 @@
   content: "";
   position: absolute;
   top: -5px;
-  left: 16px;
+  left: var(--arrow-left, 16px);
   width: 9px;
   height: 9px;
   background: var(--panel);
   border-left: 1px solid var(--line);
   border-top: 1px solid var(--line);
   transform: rotate(45deg);
+}
+
+/* Popover volteado hacia arriba (el término estaba cerca del borde inferior):
+   la flecha va abajo y apunta hacia abajo. */
+.refpop[data-up]::before {
+  top: auto;
+  bottom: -5px;
+  border-left: 0;
+  border-top: 0;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 
 .refpop__kind {

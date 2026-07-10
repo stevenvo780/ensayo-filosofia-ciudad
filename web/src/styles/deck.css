@@ -128,3 +128,16 @@
 @media (max-width: 760px) {
   .deck .triad-cols { grid-template-columns: 1fr; min-height: auto; }
 }
+
+/* --- JuninFlowViz: río de gente en el corredor --- */
+.deck .juninviz { width: 100%; max-width: 1080px; margin: 2vmin auto 0; }
+.deck .juninviz canvas { display: block; width: 100%; height: clamp(170px, 25vmin, 262px);
+  background: linear-gradient(180deg, #0c141d 0%, #0d1620 62%, #101b24 100%);
+  border: 1px solid var(--line); border-radius: 1.2vmin; box-shadow: 0 3vmin 6vmin rgba(0,0,0,.5); }
+.deck .juninviz-cap { margin: 1vmin auto 0; font-size: clamp(.78rem, 1.8vmin, 1rem); color: var(--muted); max-width: none; }
+.deck .juninviz-cap strong { color: var(--accent); }
+.deck .juninviz-cap em { color: var(--accent2); }
+
+/* --- KinshipViz: parientes convergen al núcleo categorial --- */
+.deck .kinviz { width: 100%; max-width: 880px; margin: 1.6vmin auto 0; }
+.deck .kinviz svg { max-height: clamp(180px, 26vmin, 250px); }

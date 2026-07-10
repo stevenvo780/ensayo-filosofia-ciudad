@@ -6,6 +6,8 @@ import { SchellingViz } from "./SchellingViz";
 import { TriadViz } from "./TriadViz";
 import { ZipfViz } from "./ZipfViz";
 import { DiffusionViz } from "./DiffusionViz";
+import { JuninFlowViz } from "./JuninFlowViz";
+import { KinshipViz } from "./KinshipViz";
 
 export interface Slide {
   content: ReactNode;
@@ -49,6 +51,7 @@ export const slides: Slide[] = [
           La informalidad no es ruido del flujo: es la ciudad como <em>obra</em> (Lefebvre) —un
           componente que la ciudad produce y que la produce—.
         </p>
+        <JuninFlowViz />
       </>
     ),
     note: "La informalidad no es ruido: es producción de ciudad (Lefebvre, la ciudad como obra). Lo que el tablero no puede leer —diciembre— es justo lo que hay que proteger. Regla de oro del guion: si cortan el tiempo, sacar ejemplos, nunca la tesis ni el delta.",
@@ -92,6 +95,7 @@ export const slides: Slide[] = [
           distinción argumentada. «Posible» = la <em>utopía experimental</em> de Lefebvre: explorar
           lo posible implicado en lo real.
         </p>
+        <KinshipViz />
       </>
     ),
     note: "Nombrar precedentes convierte la vulnerabilidad (¿no es esto ya conocido?) en fortaleza. Objeción Jasanoff: la subsidiariedad asigna por escala/jurisdicción; la mía por límite modal-categorial, y lo demuestro desde el oficio. No pelear con Jasanoff: usarla de trampolín.",
